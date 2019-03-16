@@ -52,11 +52,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="vista\InicioSesion.cs">
+    <Compile Include="vista\FormInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vista\InicioSesion.Designer.cs">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <Compile Include="vista\FormInicioSesion.Designer.cs">
+      <DependentUpon>FormInicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\FormMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -67,8 +73,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="vista\InicioSesion.resx">
-      <DependentUpon>InicioSesion.cs</DependentUpon>
+    <EmbeddedResource Include="vista\FormInicioSesion.resx">
+      <DependentUpon>FormInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\88705.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rrtuio.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -93,9 +93,29 @@ namespace Venta_de_autos.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap auto_1 {
+            get {
+                object obj = ResourceManager.GetObject("auto 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pertura_fondo {
             get {
                 object obj = ResourceManager.GetObject("pertura-fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rrtuio {
+            get {
+                object obj = ResourceManager.GetObject("rrtuio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

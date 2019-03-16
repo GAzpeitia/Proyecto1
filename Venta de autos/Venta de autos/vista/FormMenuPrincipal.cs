@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Venta_de_autos.vista
 {
-    public partial class InicioSesion : Form
+    public partial class FormMenuPrincipal : Form
     {
-        public InicioSesion()
+        public FormMenuPrincipal()
         {
             InitializeComponent();
         }
