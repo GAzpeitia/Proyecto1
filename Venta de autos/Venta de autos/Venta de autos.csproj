@@ -52,6 +52,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="vista\FormAutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormAutos.Designer.cs">
+      <DependentUpon>FormAutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="vista\FormInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormAutos.resx">
+      <DependentUpon>FormAutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
@@ -103,6 +121,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rrtuio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautifull-anime-sketch-beautiful-anime-sketches-drawings-nocturnal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eligeme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gua2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
