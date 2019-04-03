@@ -1,4 +1,4 @@
-﻿namespace Venta_de_autos.vista
+﻿namespace FormInicio.vista
 {
     partial class FormInicioSesion
     {
@@ -69,6 +69,7 @@
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(222, 20);
             this.TxtUsuario.TabIndex = 2;
+            this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
             // label3
             // 
@@ -131,6 +132,7 @@
             this.BtnCancel.TabIndex = 2;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnAceptar
             // 

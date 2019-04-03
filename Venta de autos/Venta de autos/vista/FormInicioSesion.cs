@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.IO;
 
-namespace Venta_de_autos.vista
+namespace FormInicio.vista
 {
     public partial class FormInicioSesion : Form
     {
@@ -12,7 +13,29 @@ namespace Venta_de_autos.vista
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
+            if  (this.TxtUsuario.Text == "Admin" && TxtPassword.Text == "123")
+            {
+                //.Show();
+                //Hide();
+            } else
+            {
+                MessageBox.Show("Error de autenticación!!!");
+            }
 
+            
+        }
+
+        private void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro que desea salir del sistema?") == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

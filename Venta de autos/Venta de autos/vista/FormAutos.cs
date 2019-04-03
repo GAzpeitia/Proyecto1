@@ -16,5 +16,10 @@ namespace Venta_de_autos.vista
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace Venta_de_autos.vista
         {
             InitializeComponent();
         }
+
+        private void FormCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

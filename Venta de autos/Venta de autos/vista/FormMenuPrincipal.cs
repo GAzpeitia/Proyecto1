@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Venta_de_autos.vista
+namespace MenuPrincipal
 {
     public partial class FormMenuPrincipal : Form
     {
         public FormMenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void FormMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
