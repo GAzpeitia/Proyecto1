@@ -1,6 +1,6 @@
-﻿namespace MenuPrincipal
+﻿namespace Venta_de_autos
 {
-    partial class FormMenuPrincipal
+    partial class formMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClient = new System.Windows.Forms.Button();
+            this.btnAut = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -46,8 +46,8 @@
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnClient);
+            this.groupBox1.Controls.Add(this.btnAut);
             this.groupBox1.Location = new System.Drawing.Point(12, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(576, 206);
@@ -86,28 +86,29 @@
             this.button3.Text = "Punto de  venta";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnClient
             // 
-            this.button2.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Venta_de_autos.Properties.Resources._88705;
-            this.button2.Location = new System.Drawing.Point(6, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(276, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Clientes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnClient.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClient.Image = global::Venta_de_autos.Properties.Resources._88705;
+            this.btnClient.Location = new System.Drawing.Point(6, 62);
+            this.btnClient.Name = "btnClient";
+            this.btnClient.Size = new System.Drawing.Size(276, 37);
+            this.btnClient.TabIndex = 1;
+            this.btnClient.Text = "Clientes";
+            this.btnClient.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnAut
             // 
-            this.button1.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = global::Venta_de_autos.Properties.Resources._88705;
-            this.button1.Location = new System.Drawing.Point(6, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(276, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Catálogo de autos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAut.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAut.ForeColor = System.Drawing.Color.Black;
+            this.btnAut.Image = global::Venta_de_autos.Properties.Resources._88705;
+            this.btnAut.Location = new System.Drawing.Point(6, 19);
+            this.btnAut.Name = "btnAut";
+            this.btnAut.Size = new System.Drawing.Size(276, 37);
+            this.btnAut.TabIndex = 0;
+            this.btnAut.Text = "Catálogo de autos";
+            this.btnAut.UseVisualStyleBackColor = true;
+            this.btnAut.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -121,6 +122,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -132,7 +134,7 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Ventana de Menú";
             // 
-            // FormMenuPrincipal
+            // formMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,7 +144,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FormMenuPrincipal";
+            this.Name = "formMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.groupBox1.ResumeLayout(false);
@@ -158,8 +160,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClient;
+        private System.Windows.Forms.Button btnAut;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
     }

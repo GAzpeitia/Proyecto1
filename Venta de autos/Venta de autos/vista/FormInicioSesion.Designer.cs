@@ -1,4 +1,4 @@
-﻿namespace FormInicio.vista
+﻿namespace Venta_de_autos
 {
     partial class FormInicioSesion
     {
@@ -162,6 +162,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormInicioSesion_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

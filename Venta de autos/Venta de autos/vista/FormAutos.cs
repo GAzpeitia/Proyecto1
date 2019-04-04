@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Venta_de_autos.vista
 {
-    public partial class FormAutos : Form
+    public partial class formAutos : Form
     {
-        public FormAutos()
+        public formAutos()
         {
             InitializeComponent();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formAutos_Load(object sender, EventArgs e)
         {
 
         }

@@ -2,26 +2,27 @@
 using System.Windows.Forms;
 using System.IO;
 
-namespace FormInicio.vista
+namespace Venta_de_autos
 {
     public partial class FormInicioSesion : Form
     {
         public FormInicioSesion()
         {
             InitializeComponent();
+            
         }
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             if  (this.TxtUsuario.Text == "Admin" && TxtPassword.Text == "123")
             {
-                //.Show();
-                //Hide();
+                Form FormMenu = new formMenu();
+                FormMenu.Hide();
             } else
             {
                 MessageBox.Show("Error de autenticación!!!");
             }
-
+            
             
         }
 
@@ -32,10 +33,12 @@ namespace FormInicio.vista
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro que desea salir del sistema?") == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            this.Close();
+        }
+
+        private void FormInicioSesion_Load(object sender, EventArgs e)
+        {
+            //this.BtnAceptar.DialogResult = System.Windows.Forms.DialogResult.Yes;
         }
     }
 }

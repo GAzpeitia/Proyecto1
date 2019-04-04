@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FormInicio.vista;
+using Venta_de_autos.vista;
 
 namespace Venta_de_autos
 {
     static class Program
     {
-        public static MenuPrincipal.FormMenuPrincipal = null;
+        //public static Form formMenu = null;
         static void Main()
         {
             Application.EnableVisualStyles();
