@@ -35,8 +35,8 @@ namespace Venta_de_autos
 
         private void btnClient_Click(object sender, EventArgs e)
         {
-            Form FormAutos = new formAutos();
-            FormAutos.Show();
+            Form FormClient = new formCliente();
+            FormClient.Show();
         }
     }
 }

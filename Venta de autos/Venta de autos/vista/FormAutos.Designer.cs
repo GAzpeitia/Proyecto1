@@ -43,17 +43,17 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtModelo = new System.Windows.Forms.TextBox();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.comboColor = new System.Windows.Forms.ComboBox();
+            this.comboMarca = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -153,6 +153,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEliminar
             // 
@@ -180,6 +181,7 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnBuscar
             // 
@@ -198,12 +200,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.DarkRed;
+            this.groupBox1.Controls.Add(this.comboMarca);
+            this.groupBox1.Controls.Add(this.comboColor);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.txtTelefono);
-            this.groupBox1.Controls.Add(this.txtDireccion);
-            this.groupBox1.Controls.Add(this.txtApellidos);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.txtId);
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.txtModelo);
+            this.groupBox1.Controls.Add(this.txtMatricula);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -228,40 +230,26 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // txtTelefono
+            // txtPrecio
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(140, 164);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(128, 26);
-            this.txtTelefono.TabIndex = 9;
+            this.txtPrecio.Location = new System.Drawing.Point(140, 100);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(128, 26);
+            this.txtPrecio.TabIndex = 7;
             // 
-            // txtDireccion
+            // txtModelo
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(140, 132);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(128, 26);
-            this.txtDireccion.TabIndex = 8;
+            this.txtModelo.Location = new System.Drawing.Point(140, 68);
+            this.txtModelo.Name = "txtModelo";
+            this.txtModelo.Size = new System.Drawing.Size(128, 26);
+            this.txtModelo.TabIndex = 6;
             // 
-            // txtApellidos
+            // txtMatricula
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(140, 100);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(128, 26);
-            this.txtApellidos.TabIndex = 7;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 68);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(128, 26);
-            this.txtNombre.TabIndex = 6;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(140, 36);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(128, 26);
-            this.txtId.TabIndex = 5;
+            this.txtMatricula.Location = new System.Drawing.Point(140, 36);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(128, 26);
+            this.txtMatricula.TabIndex = 5;
             // 
             // label5
             // 
@@ -332,6 +320,78 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // comboColor
+            // 
+            this.comboColor.FormattingEnabled = true;
+            this.comboColor.Items.AddRange(new object[] {
+            "Amarillo",
+            "Rojo",
+            "Azul",
+            "Rosa",
+            "Dorado",
+            "Plata",
+            "Bronce",
+            "Marrón",
+            "Purpura",
+            "Blanco",
+            "Negro",
+            "Verde",
+            "Naranja",
+            "Diversos colores",
+            "Ninguno"});
+            this.comboColor.Location = new System.Drawing.Point(140, 168);
+            this.comboColor.Name = "comboColor";
+            this.comboColor.Size = new System.Drawing.Size(128, 28);
+            this.comboColor.TabIndex = 11;
+            // 
+            // comboMarca
+            // 
+            this.comboMarca.FormattingEnabled = true;
+            this.comboMarca.Items.AddRange(new object[] {
+            "Chevrolet",
+            "Toyota",
+            "Ford",
+            "Nissan",
+            "VolsWagwn",
+            "Seat",
+            "Peugeot",
+            "Renault",
+            "Audi",
+            "Alfa Romeo",
+            "Alpine",
+            "Aston",
+            "Bentley",
+            "BMW",
+            "Bugatti",
+            "Citroën",
+            "Cupra",
+            "Ferrari",
+            "Fiat",
+            "Honda",
+            "Hyundai",
+            "Infiniti",
+            "Jaguar",
+            "Jeep",
+            "Kia",
+            "Koenigsegg",
+            "Lamborghini",
+            "Land Rover",
+            "Lexus",
+            "McLaren",
+            "Mercedes-Benz",
+            "MINI",
+            "Pagani",
+            "Porche",
+            "Rolls-Royce",
+            "Smart",
+            "Suzuki",
+            "Tesla",
+            "Toyota"});
+            this.comboMarca.Location = new System.Drawing.Point(140, 132);
+            this.comboMarca.Name = "comboMarca";
+            this.comboMarca.Size = new System.Drawing.Size(128, 28);
+            this.comboMarca.TabIndex = 12;
+            // 
             // formAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,15 +437,15 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtApellidos;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtModelo;
+        private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboMarca;
+        private System.Windows.Forms.ComboBox comboColor;
     }
 }

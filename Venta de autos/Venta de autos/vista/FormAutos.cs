@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Venta_de_autos
 {
@@ -19,7 +20,7 @@ namespace Venta_de_autos
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void formAutos_Load(object sender, EventArgs e)
@@ -30,6 +31,27 @@ namespace Venta_de_autos
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (txtMatricula.Text == "" && txtModelo.Text == "")
+            {
+                MessageBox.Show("No has escrito la matrícula ni el modelo"); 
+            }
+            else
+            {
+                //MySqlConnection conectar = new MySqlConnection("INSERT INTO tab_coche VALUES('" & txtMatricula.Text & "','" & txtModelo.Text & "','" & txtPrecio.Text & "','" & comboMarca.Text & "','" & comboColor.Text & "'," & (0) & ")");
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtMatricula.Text = "";
+            txtModelo.Text = "";
+            txtPrecio.Text = "";
+            comboMarca.Text = "";
+            comboColor.Text = "";
         }
     }
 }

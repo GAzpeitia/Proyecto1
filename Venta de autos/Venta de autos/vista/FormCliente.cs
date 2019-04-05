@@ -26,5 +26,15 @@ namespace Venta_de_autos
         {
             Application.Exit();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtApellidos.Text = "";
+            txtDireccion.Text = "";
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txtTelefono.Text = "";
+
+        }
     }
 }

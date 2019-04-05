@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
+using MySql.Data.MySqlClient;
 
 namespace Venta_de_autos
 {
@@ -18,6 +19,10 @@ namespace Venta_de_autos
             {
                 Form FormMenu = new formMenu();
                 FormMenu.Show();
+                MySqlConnection conectar = new MySqlConnection("server=localhost;database=empresa_venta_auto;user id=root;password=;");
+                MessageBox.Show("Estas conectado");
+                //conectar.Open();
+                // return conectar;
             } else
             {
                 MessageBox.Show("Error de autenticación!!!");
