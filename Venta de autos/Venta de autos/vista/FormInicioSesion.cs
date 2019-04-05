@@ -21,6 +21,7 @@ namespace Venta_de_autos
                 FormMenu.Show();
                 MySqlConnection conectar = new MySqlConnection("server=localhost;database=empresa_venta_auto;user id=root;password=;");
                 MessageBox.Show("Estas conectado");
+                
                 //conectar.Open();
                 // return conectar;
                 TxtUsuario.Text = "";
@@ -29,6 +30,7 @@ namespace Venta_de_autos
             {
                 MessageBox.Show("Error de autenticación!!!");
             }
+           
             
             
         }

@@ -24,7 +24,7 @@ namespace Venta_de_autos
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)

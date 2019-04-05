@@ -72,7 +72,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(276, 37);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Revisión";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -83,7 +82,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(276, 37);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Punto de  venta";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // btnClient

@@ -24,7 +24,7 @@ namespace Venta_de_autos
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

@@ -10,11 +10,18 @@ namespace Venta_de_autos
 {
     static class Program
     {
-        //public static Form formMenu = null;
+        public static formMenu FormMenu = null;
+        public static formAutos FormAutos = null;
+        public static formCliente FormCliente = null;
+        public static FormInicioSesion FormIni = null;
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            FormMenu = new formMenu();
+            FormAutos = new formAutos();
+            FormCliente = new formCliente();
+            FormIni = new FormInicioSesion();
             Application.Run(new FormInicioSesion());
         }
     }
