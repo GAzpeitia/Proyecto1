@@ -23,6 +23,8 @@ namespace Venta_de_autos
                 MessageBox.Show("Estas conectado");
                 //conectar.Open();
                 // return conectar;
+                TxtUsuario.Text = "";
+                TxtPassword.Text = "";
             } else
             {
                 MessageBox.Show("Error de autenticación!!!");
