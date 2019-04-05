@@ -27,10 +27,16 @@ namespace Venta_de_autos
             this.Close();
         }
 
-        private void btnAut_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form Auto = new formAutos();
-            Auto.Hide();
+            Form FormAutos = new formAutos();
+            FormAutos.Show();
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            Form FormAutos = new formAutos();
+            FormAutos.Show();
         }
     }
 }

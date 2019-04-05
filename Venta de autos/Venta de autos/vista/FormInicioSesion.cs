@@ -17,7 +17,7 @@ namespace Venta_de_autos
             if  (this.TxtUsuario.Text == "Admin" && TxtPassword.Text == "123")
             {
                 Form FormMenu = new formMenu();
-                FormMenu.Hide();
+                FormMenu.Show();
             } else
             {
                 MessageBox.Show("Error de autenticación!!!");
@@ -33,12 +33,12 @@ namespace Venta_de_autos
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void FormInicioSesion_Load(object sender, EventArgs e)
         {
-            //this.BtnAceptar.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.BtnAceptar.DialogResult = System.Windows.Forms.DialogResult.Yes;
         }
     }
 }

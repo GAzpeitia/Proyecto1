@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Venta_de_autos.vista
+namespace Venta_de_autos
 {
     public partial class formAutos : Form
     {
@@ -25,6 +25,11 @@ namespace Venta_de_autos.vista
         private void formAutos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

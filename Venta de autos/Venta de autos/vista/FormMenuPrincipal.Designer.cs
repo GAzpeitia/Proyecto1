@@ -96,6 +96,7 @@
             this.btnClient.TabIndex = 1;
             this.btnClient.Text = "Clientes";
             this.btnClient.UseVisualStyleBackColor = true;
+            this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // btnAut
             // 

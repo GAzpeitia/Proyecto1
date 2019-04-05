@@ -1,4 +1,4 @@
-﻿namespace Venta_de_autos.vista
+﻿namespace Venta_de_autos
 {
     partial class formAutos
     {
@@ -330,6 +330,7 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // formAutos
             // 
@@ -348,6 +349,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "formAutos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.formAutos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

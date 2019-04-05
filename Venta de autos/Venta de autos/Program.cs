@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Venta_de_autos.vista;
+using Venta_de_autos;
 
 namespace Venta_de_autos
 {

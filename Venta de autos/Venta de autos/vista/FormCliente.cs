@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Venta_de_autos.vista
+namespace Venta_de_autos
 {
-    public partial class FormCliente : Form
+    public partial class formCliente : Form
     {
-        public FormCliente()
+        public formCliente()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace Venta_de_autos.vista
         private void FormCliente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
