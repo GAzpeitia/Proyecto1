@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="modelo\Autos.cs" />
+    <Compile Include="modelo\Cliente.cs" />
     <Compile Include="modelo\Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

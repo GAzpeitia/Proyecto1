@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Venta_de_autos
 {
@@ -35,6 +36,11 @@ namespace Venta_de_autos
             txtNombre.Text = "";
             txtTelefono.Text = "";
 
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            formCliente client = new formCliente;
         }
     }
 }

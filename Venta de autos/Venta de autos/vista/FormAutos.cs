@@ -41,7 +41,7 @@ namespace Venta_de_autos
             }
             else
             {
-                //MySqlConnection conectar = new MySqlConnection("INSERT INTO tab_coche VALUES('" & txtMatricula.Text & "','" & txtModelo.Text & "','" & txtPrecio.Text & "','" & comboMarca.Text & "','" & comboColor.Text & "'," & (0) & ")");
+                //MySqlConnection conectar = new MySqlConnection("C:\\empresa_venta_auto\\tab_coche.MYD VALUES('" & txtMatricula.Text & "','" & txtModelo.Text & "','" & txtPrecio.Text & "','" & comboMarca.Text & "','" & comboColor.Text & "'," & (0) & ")");
             }
         }
 
