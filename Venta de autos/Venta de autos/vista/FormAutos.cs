@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MySql.Data;
 
 namespace Venta_de_autos
 {
     public partial class formAutos : Form
     {
+        //mi conexion
+        MySqlConnection connection = new MySqlConnection();
+        String connectionString;
         public formAutos()
         {
             InitializeComponent();
@@ -41,7 +45,22 @@ namespace Venta_de_autos
             }
             else
             {
-                //MySqlConnection conectar = new MySqlConnection("C:\\empresa_venta_auto\\tab_coche.MYD VALUES('" & txtMatricula.Text & "','" & txtModelo.Text & "','" & txtPrecio.Text & "','" & comboMarca.Text & "','" & comboColor.Text & "'," & (0) & ")");
+                //MySqlConnection conectar = new MySqlConnection("INSERT *INTO tab_coche VALUES('" & txtMatricula.Text & "','" & txtModelo.Text & "','" & txtPrecio.Text & "','" & comboMarca.Text & "','" & comboColor.Text & "'," & (0) & ")");
+                try
+                {
+                    IDbCommand comando = connection.CreateCommand();
+                    connection.Open();
+                    connectionString = "insert into usuario (matricula,modelo,precio,marca,color)values(' + textBox1.Text + ','" + txtMatricula.Text + "','" + txtModelo.Text + "','" + txtPrecio.Text + "','" + comboMarca.Text + "','1','" + comboColor.Text + "',)";
+                    //connectionion.ConnectionString = connectionString;
+                    comando.ExecuteNonQuery();
+
+                    MessageBox.Show("Registro Exitoso");
+                    connection.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("insercion fallida");
+                }
             }
         }
 

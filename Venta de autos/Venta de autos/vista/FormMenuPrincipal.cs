@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 
 namespace Venta_de_autos
 {
     public partial class formMenu : Form
     {
+        //mi conexion
+        MySqlConnection connection = new MySqlConnection();
+        String connectionString;
         public formMenu()
         {
             InitializeComponent();

@@ -40,7 +40,9 @@ namespace Venta_de_autos
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            formCliente client = new formCliente;
+            //formCliente client = new formCliente();
+            String ruta = "e:\\logs.txt";
+            listClient.Items.Add("     " + txtId.Text + "                    " + txtNombre.Text + "                           " + txtApellidos.Text + "                       " + txtDireccion.Text + "                            " + txtTelefono.Text);
         }
     }
 }
