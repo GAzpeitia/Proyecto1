@@ -32,6 +32,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -47,8 +48,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.richTextBoxAutos = new System.Windows.Forms.RichTextBox();
+            this.textMatri = new System.Windows.Forms.TextBox();
+            this.textMode = new System.Windows.Forms.TextBox();
+            this.textPrec = new System.Windows.Forms.TextBox();
+            this.textMarca = new System.Windows.Forms.TextBox();
+            this.textColor = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,6 +102,20 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.Location = new System.Drawing.Point(247, 25);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(69, 64);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,6 +128,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnNuevo
             // 
@@ -315,34 +340,125 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Matrícula:";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(247, 25);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(69, 64);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // richTextBoxAutos
             // 
-            this.richTextBoxAutos.Location = new System.Drawing.Point(537, 40);
+            this.richTextBoxAutos.Location = new System.Drawing.Point(12, 425);
             this.richTextBoxAutos.Name = "richTextBoxAutos";
-            this.richTextBoxAutos.Size = new System.Drawing.Size(190, 313);
+            this.richTextBoxAutos.Size = new System.Drawing.Size(555, 113);
             this.richTextBoxAutos.TabIndex = 22;
             this.richTextBoxAutos.Text = "";
+            // 
+            // textMatri
+            // 
+            this.textMatri.Enabled = false;
+            this.textMatri.Location = new System.Drawing.Point(26, 399);
+            this.textMatri.Name = "textMatri";
+            this.textMatri.Size = new System.Drawing.Size(100, 20);
+            this.textMatri.TabIndex = 23;
+            // 
+            // textMode
+            // 
+            this.textMode.Enabled = false;
+            this.textMode.Location = new System.Drawing.Point(132, 399);
+            this.textMode.Name = "textMode";
+            this.textMode.Size = new System.Drawing.Size(100, 20);
+            this.textMode.TabIndex = 24;
+            // 
+            // textPrec
+            // 
+            this.textPrec.Enabled = false;
+            this.textPrec.Location = new System.Drawing.Point(238, 399);
+            this.textPrec.Name = "textPrec";
+            this.textPrec.Size = new System.Drawing.Size(100, 20);
+            this.textPrec.TabIndex = 25;
+            // 
+            // textMarca
+            // 
+            this.textMarca.Enabled = false;
+            this.textMarca.Location = new System.Drawing.Point(344, 399);
+            this.textMarca.Name = "textMarca";
+            this.textMarca.Size = new System.Drawing.Size(100, 20);
+            this.textMarca.TabIndex = 26;
+            // 
+            // textColor
+            // 
+            this.textColor.Enabled = false;
+            this.textColor.Location = new System.Drawing.Point(450, 399);
+            this.textColor.Name = "textColor";
+            this.textColor.Size = new System.Drawing.Size(100, 20);
+            this.textColor.TabIndex = 27;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(35, 378);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 18);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Matrícula:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(149, 378);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 18);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Modelo:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(256, 378);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 18);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Precio:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(360, 378);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 18);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Marca:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(466, 378);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 18);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Color:";
             // 
             // formAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(739, 382);
+            this.ClientSize = new System.Drawing.Size(584, 553);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textColor);
+            this.Controls.Add(this.textMarca);
+            this.Controls.Add(this.textPrec);
+            this.Controls.Add(this.textMode);
+            this.Controls.Add(this.textMatri);
             this.Controls.Add(this.richTextBoxAutos);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label6);
@@ -382,5 +498,15 @@
         private System.Windows.Forms.ComboBox comboMarca;
         private System.Windows.Forms.ComboBox comboColor;
         private System.Windows.Forms.RichTextBox richTextBoxAutos;
+        private System.Windows.Forms.TextBox textMatri;
+        private System.Windows.Forms.TextBox textMode;
+        private System.Windows.Forms.TextBox textPrec;
+        private System.Windows.Forms.TextBox textMarca;
+        private System.Windows.Forms.TextBox textColor;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

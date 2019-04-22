@@ -55,20 +55,43 @@ namespace Venta_de_autos
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             StreamWriter escr = new StreamWriter(@"C:\Users\sport\Desktop\Autos.txt", true);
-            try
+           
+            if (txtMatricula.Text == "" && txtModelo.Text == "" && txtPrecio.Text == "" && comboMarca.Text == "" && comboColor.Text == "")
             {
-                escr.WriteLine("Matrícula: " + txtMatricula.Text);
-                escr.WriteLine("Modelo: " + txtModelo.Text);
-                escr.WriteLine("Precio: " + txtPrecio.Text);
-                escr.WriteLine("Marca: " + comboMarca.Text);
-                escr.WriteLine("Color: " + comboColor.Text);
-                escr.WriteLine("\n");
+                MessageBox.Show("Faltan datos por llenar!!!");
             }
-            catch
+            else
             {
-                MessageBox.Show("Error");
+                try
+                {
+                    escr.WriteLine(string.Format("{0};{1};{2};{3};{4}", txtMatricula.Text, txtModelo.Text, txtPrecio.Text, comboMarca.Text, comboColor.Text));
+                    /*escr.WriteLine("Matrícula: " + txtMatricula.Text);
+                    escr.WriteLine("Modelo: " + txtModelo.Text);
+                    escr.WriteLine("Precio: " + txtPrecio.Text);
+                    escr.WriteLine("Marca: " + comboMarca.Text);
+                    escr.WriteLine("Color: " + comboColor.Text);
+                    escr.WriteLine("\n");*/
+                }
+                catch
+                {
+                    MessageBox.Show("Error");
+                }
+                escr.Close();
+                Autos autos1 = new Autos();
+
+                autos1._matricula = txtMatricula.Text;
+                autos1._modelo = txtModelo.Text;
+                autos1._precio = txtPrecio.Text;
+                autos1._marca = comboMarca.Text;
+                autos1._color = comboColor.Text;
+
+                textMatri.Text = autos1._matricula.ToString();
+                textMode.Text = autos1._modelo.ToString();
+                textPrec.Text = autos1._precio.ToString();
+                textMarca.Text = autos1._marca.ToString();
+                textColor.Text = autos1._color.ToString();
             }
-            escr.Close();
+            
             /*if (txtMatricula.Text == "" && txtModelo.Text == "")
             {
                 MessageBox.Show("No has escrito la matrícula ni el modelo"); 
@@ -102,6 +125,45 @@ namespace Venta_de_autos
             comboMarca.Text = "";
             comboColor.Text = "";
             richTextBoxAutos.Text = "";
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ruta = @"C:\Users\sport\Desktop\Autos.txt";
+
+                //Obtienes las líneas del archivo de texto
+                string[] lineas = File.ReadAllLines(ruta);
+
+                //Si hay líneas ...
+                if (lineas.Length > 0)
+                {
+                    //Si en la colección obtenida existe el valor a eliminar
+                    if (lineas.Contains(txtMatricula.Text))
+                    {
+                        //Creo un nuevo archivo sustituyendo al otro
+                        //Si alguna línea es igual al valor a eliminar no lo tomo
+                        File.WriteAllLines(ruta, lineas.Where(x => x.Trim() != txtMatricula.Text));
+
+                        MessageBox.Show("El registro fue borrado!");
+                    }
+                    else
+                    {
+                        MessageBox.Show(string.Format("No existe el nombre '{0}' en ninguna de las líneas.",
+                                                txtMatricula.Text));
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("El archivo no contiene líneas para leer.");
+                }
+            }
+            catch (Exception ex)
+            {
+                //Si se produce un error al eliminar lo mostramos
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

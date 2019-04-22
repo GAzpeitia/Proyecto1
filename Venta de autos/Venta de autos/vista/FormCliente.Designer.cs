@@ -43,12 +43,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEjecutar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.richTextBoxClient = new System.Windows.Forms.RichTextBox();
+            this.textId = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.textApe = new System.Windows.Forms.TextBox();
+            this.textDir = new System.Windows.Forms.TextBox();
+            this.textTele = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -199,6 +209,20 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.Location = new System.Drawing.Point(247, 25);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(69, 64);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -252,35 +276,121 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Regístro de clientes";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(247, 25);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(69, 64);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // richTextBoxClient
             // 
-            this.richTextBoxClient.Location = new System.Drawing.Point(569, 43);
+            this.richTextBoxClient.Location = new System.Drawing.Point(12, 449);
             this.richTextBoxClient.Name = "richTextBoxClient";
-            this.richTextBoxClient.Size = new System.Drawing.Size(180, 319);
+            this.richTextBoxClient.Size = new System.Drawing.Size(556, 107);
             this.richTextBoxClient.TabIndex = 12;
             this.richTextBoxClient.Text = "";
+            // 
+            // textId
+            // 
+            this.textId.Enabled = false;
+            this.textId.Location = new System.Drawing.Point(30, 403);
+            this.textId.Name = "textId";
+            this.textId.Size = new System.Drawing.Size(100, 20);
+            this.textId.TabIndex = 13;
+            // 
+            // textNombre
+            // 
+            this.textNombre.Enabled = false;
+            this.textNombre.Location = new System.Drawing.Point(136, 403);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(100, 20);
+            this.textNombre.TabIndex = 14;
+            // 
+            // textApe
+            // 
+            this.textApe.Enabled = false;
+            this.textApe.Location = new System.Drawing.Point(242, 403);
+            this.textApe.Name = "textApe";
+            this.textApe.Size = new System.Drawing.Size(100, 20);
+            this.textApe.TabIndex = 15;
+            // 
+            // textDir
+            // 
+            this.textDir.Enabled = false;
+            this.textDir.Location = new System.Drawing.Point(348, 403);
+            this.textDir.Name = "textDir";
+            this.textDir.Size = new System.Drawing.Size(100, 20);
+            this.textDir.TabIndex = 16;
+            // 
+            // textTele
+            // 
+            this.textTele.Enabled = false;
+            this.textTele.Location = new System.Drawing.Point(454, 403);
+            this.textTele.Name = "textTele";
+            this.textTele.Size = new System.Drawing.Size(100, 20);
+            this.textTele.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(49, 382);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 18);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Id:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(152, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 18);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Nombre:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(256, 382);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(73, 18);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Apellidos:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(361, 382);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 18);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Dirección:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(464, 382);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 18);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Teléfono:";
             // 
             // formCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(761, 384);
+            this.ClientSize = new System.Drawing.Size(580, 568);
             this.ControlBox = false;
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textTele);
+            this.Controls.Add(this.textDir);
+            this.Controls.Add(this.textApe);
+            this.Controls.Add(this.textNombre);
+            this.Controls.Add(this.textId);
             this.Controls.Add(this.richTextBoxClient);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnEjecutar);
@@ -320,5 +430,15 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.RichTextBox richTextBoxClient;
+        private System.Windows.Forms.TextBox textId;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox textApe;
+        private System.Windows.Forms.TextBox textDir;
+        private System.Windows.Forms.TextBox textTele;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
