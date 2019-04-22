@@ -80,8 +80,7 @@ namespace Venta_de_autos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            StreamReader leer = new StreamReader(@"C:\Users\sport\Desktop\Clientes.txt");
-
+            
         }
     }
 }
