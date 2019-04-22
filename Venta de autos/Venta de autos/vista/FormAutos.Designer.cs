@@ -29,19 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAutos));
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.listClient = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboMarca = new System.Windows.Forms.ComboBox();
+            this.comboColor = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtModelo = new System.Windows.Forms.TextBox();
@@ -52,62 +48,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.comboColor = new System.Windows.Forms.ComboBox();
-            this.comboMarca = new System.Windows.Forms.ComboBox();
+            this.richTextBoxAutos = new System.Windows.Forms.RichTextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(422, 384);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 18);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Teléfono";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(302, 384);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 18);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Dirección";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(195, 384);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 18);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Apellidos";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(92, 384);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 18);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Nombre";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(31, 384);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 18);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Id";
             // 
             // label6
             // 
@@ -119,21 +64,13 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Catálogo de autos";
             // 
-            // listClient
-            // 
-            this.listClient.FormattingEnabled = true;
-            this.listClient.Location = new System.Drawing.Point(12, 405);
-            this.listClient.Name = "listClient";
-            this.listClient.Size = new System.Drawing.Size(519, 95);
-            this.listClient.TabIndex = 14;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DarkRed;
             this.groupBox2.Controls.Add(this.btnGuardar);
+            this.groupBox2.Controls.Add(this.btnSalir);
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.btnNuevo);
-            this.groupBox2.Controls.Add(this.btnBuscar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 264);
             this.groupBox2.Name = "groupBox2";
@@ -146,7 +83,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(247, 25);
+            this.btnGuardar.Location = new System.Drawing.Point(97, 25);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(69, 64);
             this.btnGuardar.TabIndex = 3;
@@ -185,16 +122,16 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.BackColor = System.Drawing.Color.PaleGreen;
             this.btnBuscar.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnBuscar.ImageKey = "(none)";
-            this.btnBuscar.Location = new System.Drawing.Point(97, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(377, 289);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(69, 64);
+            this.btnBuscar.Size = new System.Drawing.Size(148, 64);
             this.btnBuscar.TabIndex = 0;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Text = "Mostrar en la lista";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // groupBox1
@@ -219,6 +156,78 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del auto";
+            // 
+            // comboMarca
+            // 
+            this.comboMarca.FormattingEnabled = true;
+            this.comboMarca.Items.AddRange(new object[] {
+            "Chevrolet",
+            "Toyota",
+            "Ford",
+            "Nissan",
+            "VolsWagwn",
+            "Seat",
+            "Peugeot",
+            "Renault",
+            "Audi",
+            "Alfa Romeo",
+            "Alpine",
+            "Aston",
+            "Bentley",
+            "BMW",
+            "Bugatti",
+            "Citroën",
+            "Cupra",
+            "Ferrari",
+            "Fiat",
+            "Honda",
+            "Hyundai",
+            "Infiniti",
+            "Jaguar",
+            "Jeep",
+            "Kia",
+            "Koenigsegg",
+            "Lamborghini",
+            "Land Rover",
+            "Lexus",
+            "McLaren",
+            "Mercedes-Benz",
+            "MINI",
+            "Pagani",
+            "Porche",
+            "Rolls-Royce",
+            "Smart",
+            "Suzuki",
+            "Tesla",
+            "Toyota"});
+            this.comboMarca.Location = new System.Drawing.Point(140, 132);
+            this.comboMarca.Name = "comboMarca";
+            this.comboMarca.Size = new System.Drawing.Size(128, 28);
+            this.comboMarca.TabIndex = 12;
+            // 
+            // comboColor
+            // 
+            this.comboColor.FormattingEnabled = true;
+            this.comboColor.Items.AddRange(new object[] {
+            "Amarillo",
+            "Rojo",
+            "Azul",
+            "Rosa",
+            "Dorado",
+            "Plata",
+            "Bronce",
+            "Marrón",
+            "Purpura",
+            "Blanco",
+            "Negro",
+            "Verde",
+            "Naranja",
+            "Diversos colores",
+            "Ninguno"});
+            this.comboColor.Location = new System.Drawing.Point(140, 168);
+            this.comboColor.Name = "comboColor";
+            this.comboColor.Size = new System.Drawing.Size(128, 28);
+            this.comboColor.TabIndex = 11;
             // 
             // pictureBox1
             // 
@@ -311,101 +320,32 @@
             this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(385, 289);
+            this.btnSalir.Location = new System.Drawing.Point(247, 25);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(129, 64);
+            this.btnSalir.Size = new System.Drawing.Size(69, 64);
             this.btnSalir.TabIndex = 16;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // comboColor
+            // richTextBoxAutos
             // 
-            this.comboColor.FormattingEnabled = true;
-            this.comboColor.Items.AddRange(new object[] {
-            "Amarillo",
-            "Rojo",
-            "Azul",
-            "Rosa",
-            "Dorado",
-            "Plata",
-            "Bronce",
-            "Marrón",
-            "Purpura",
-            "Blanco",
-            "Negro",
-            "Verde",
-            "Naranja",
-            "Diversos colores",
-            "Ninguno"});
-            this.comboColor.Location = new System.Drawing.Point(140, 168);
-            this.comboColor.Name = "comboColor";
-            this.comboColor.Size = new System.Drawing.Size(128, 28);
-            this.comboColor.TabIndex = 11;
-            // 
-            // comboMarca
-            // 
-            this.comboMarca.FormattingEnabled = true;
-            this.comboMarca.Items.AddRange(new object[] {
-            "Chevrolet",
-            "Toyota",
-            "Ford",
-            "Nissan",
-            "VolsWagwn",
-            "Seat",
-            "Peugeot",
-            "Renault",
-            "Audi",
-            "Alfa Romeo",
-            "Alpine",
-            "Aston",
-            "Bentley",
-            "BMW",
-            "Bugatti",
-            "Citroën",
-            "Cupra",
-            "Ferrari",
-            "Fiat",
-            "Honda",
-            "Hyundai",
-            "Infiniti",
-            "Jaguar",
-            "Jeep",
-            "Kia",
-            "Koenigsegg",
-            "Lamborghini",
-            "Land Rover",
-            "Lexus",
-            "McLaren",
-            "Mercedes-Benz",
-            "MINI",
-            "Pagani",
-            "Porche",
-            "Rolls-Royce",
-            "Smart",
-            "Suzuki",
-            "Tesla",
-            "Toyota"});
-            this.comboMarca.Location = new System.Drawing.Point(140, 132);
-            this.comboMarca.Name = "comboMarca";
-            this.comboMarca.Size = new System.Drawing.Size(128, 28);
-            this.comboMarca.TabIndex = 12;
+            this.richTextBoxAutos.Location = new System.Drawing.Point(537, 40);
+            this.richTextBoxAutos.Name = "richTextBoxAutos";
+            this.richTextBoxAutos.Size = new System.Drawing.Size(190, 313);
+            this.richTextBoxAutos.TabIndex = 22;
+            this.richTextBoxAutos.Text = "";
             // 
             // formAutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(543, 508);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(739, 382);
+            this.Controls.Add(this.richTextBoxAutos);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.listClient);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "formAutos";
@@ -423,13 +363,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listClient;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
@@ -447,5 +381,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboMarca;
         private System.Windows.Forms.ComboBox comboColor;
+        private System.Windows.Forms.RichTextBox richTextBoxAutos;
     }
 }
