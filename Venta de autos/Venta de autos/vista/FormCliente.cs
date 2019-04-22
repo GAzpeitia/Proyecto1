@@ -36,6 +36,7 @@ namespace Venta_de_autos
             txtId.Text = "";
             txtNombre.Text = "";
             txtTelefono.Text = "";
+            richTextBoxClient.Text = "";
 
         }
 

@@ -15,8 +15,8 @@ namespace Venta_de_autos
     public partial class formAutos : Form
     {
         //mi conexion
-        MySqlConnection connection = new MySqlConnection();
-        String connectionString;
+        //MySqlConnection connection = new MySqlConnection();
+        //String connectionString;
         public formAutos()
         {
             InitializeComponent();
@@ -101,6 +101,7 @@ namespace Venta_de_autos
             txtPrecio.Text = "";
             comboMarca.Text = "";
             comboColor.Text = "";
+            richTextBoxAutos.Text = "";
         }
     }
 }
