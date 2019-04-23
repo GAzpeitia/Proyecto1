@@ -37,6 +37,11 @@ namespace Venta_de_autos
             txtNombre.Text = "";
             txtTelefono.Text = "";
             richTextBoxClient.Text = "";
+            textId.Text = "";
+            textNombre.Text = "";
+            textApe.Text = "";
+            textDir.Text = "";
+            textTele.Text = "";
 
         }
 
@@ -45,19 +50,19 @@ namespace Venta_de_autos
             StreamWriter escr = new StreamWriter(@"C:\Users\sport\Desktop\Clientes.txt", true);
             try
             {
-                escr.WriteLine(string.Format("{0};{1};{2};{3};{4}", txtId.Text, txtNombre.Text, txtApellidos.Text, txtDireccion.Text, txtTelefono.Text));
-                /*escr.WriteLine("Id: " + txtId.Text);
+                //escr.WriteLine(string.Format("{0};{1};{2};{3};{4}", txtId.Text, txtNombre.Text, txtApellidos.Text, txtDireccion.Text, txtTelefono.Text));
+                escr.WriteLine("Id: " + txtId.Text);
                 escr.WriteLine("Nombre: " + txtNombre.Text);
                 escr.WriteLine("Apellidos: " + txtApellidos.Text);
                 escr.WriteLine("Dirección: " + txtDireccion.Text);
                 escr.WriteLine("Teléfono: " + txtTelefono.Text);
-                escr.WriteLine("\n");*/
+                escr.WriteLine("\n");
             }
             catch
             {
                 MessageBox.Show("Error");
             }
-            escr.Close();
+            
 
             Cliente cliente1 = new Cliente();
 
@@ -72,6 +77,8 @@ namespace Venta_de_autos
             textApe.Text = cliente1.Apellidos.ToString();
             textDir.Text = cliente1.Direccion.ToString();
             textTele.Text = cliente1.Telefono.ToString();
+
+            escr.Close();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

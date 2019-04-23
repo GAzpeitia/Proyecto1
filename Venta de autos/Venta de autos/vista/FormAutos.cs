@@ -65,19 +65,20 @@ namespace Venta_de_autos
             {
                 try
                 {
-                    escr.WriteLine(string.Format("{0};{1};{2};{3};{4}", txtMatricula.Text, txtModelo.Text, txtPrecio.Text, comboMarca.Text, comboColor.Text));
-                    /*escr.WriteLine("Matrícula: " + txtMatricula.Text);
+                    //escr.WriteLine(string.Format("{0};{1};{2};{3};{4}", txtMatricula.Text, txtModelo.Text, txtPrecio.Text, comboMarca.Text, comboColor.Text));
+                    escr.WriteLine("Matrícula: " + txtMatricula.Text);
                     escr.WriteLine("Modelo: " + txtModelo.Text);
                     escr.WriteLine("Precio: " + txtPrecio.Text);
                     escr.WriteLine("Marca: " + comboMarca.Text);
                     escr.WriteLine("Color: " + comboColor.Text);
-                    escr.WriteLine("\n");*/
+                    escr.WriteLine("\n");
                 }
                 catch
                 {
                     MessageBox.Show("Error");
                 }
                 escr.Close();
+
                 Autos autos1 = new Autos();
 
                 autos1.Matricula = txtMatricula.Text;
@@ -91,6 +92,7 @@ namespace Venta_de_autos
                 textPrec.Text = autos1.Precio.ToString();
                 textMarca.Text = autos1.Marca.ToString();
                 textColor.Text = autos1.Color.ToString();
+
             }
             
             /*if (txtMatricula.Text == "" && txtModelo.Text == "")
@@ -126,12 +128,15 @@ namespace Venta_de_autos
             comboMarca.Text = "";
             comboColor.Text = "";
             richTextBoxAutos.Text = "";
+            textMatri.Text = "";
+            textMode.Text = "";
+            textPrec.Text = "";
+            textMarca.Text = "";
+            textColor.Text = "";
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            //StreamReader leer = new StreamReader(@"C:\Users\sport\Desktop\Autos.txt");
-            //txtMatricula.Text = "****";
             if (File.Exists(@"C:\Users\sport\Desktop\Autos.txt"))
             {
                 try
