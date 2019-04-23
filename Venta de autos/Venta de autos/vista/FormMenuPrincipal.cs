@@ -15,8 +15,8 @@ namespace Venta_de_autos
     public partial class formMenu : Form
     {
         //mi conexion
-        MySqlConnection connection = new MySqlConnection();
-        String connectionString;
+        //MySqlConnection connection = new MySqlConnection();
+        //String connectionString;
         public formMenu()
         {
             InitializeComponent();
@@ -42,6 +42,11 @@ namespace Venta_de_autos
         {
             Form FormClient = new formCliente();
             FormClient.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

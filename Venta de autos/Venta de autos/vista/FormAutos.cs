@@ -25,20 +25,21 @@ namespace Venta_de_autos
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             StreamReader leer = new StreamReader(@"C:\Users\sport\Desktop\Autos.txt");
-            string line;
-            try
-            {
-                line = leer.ReadLine();
-                while (line != null)
+                string line;
+                try
                 {
-                    richTextBoxAutos.AppendText(line + "\n");
                     line = leer.ReadLine();
+                    while (line != null)
+                    {
+                        richTextBoxAutos.AppendText(line + "\n");
+                        line = leer.ReadLine();
+                    }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Error");
-            }
+                catch
+                {
+                    MessageBox.Show("Error");
+                }
+            
         }
         
 
@@ -79,17 +80,17 @@ namespace Venta_de_autos
                 escr.Close();
                 Autos autos1 = new Autos();
 
-                autos1._matricula = txtMatricula.Text;
-                autos1._modelo = txtModelo.Text;
-                autos1._precio = txtPrecio.Text;
-                autos1._marca = comboMarca.Text;
-                autos1._color = comboColor.Text;
+                autos1.Matricula = txtMatricula.Text;
+                autos1.Modelo = txtModelo.Text;
+                autos1.Precio = txtPrecio.Text;
+                autos1.Marca = comboMarca.Text;
+                autos1.Color = comboColor.Text;
 
-                textMatri.Text = autos1._matricula.ToString();
-                textMode.Text = autos1._modelo.ToString();
-                textPrec.Text = autos1._precio.ToString();
-                textMarca.Text = autos1._marca.ToString();
-                textColor.Text = autos1._color.ToString();
+                textMatri.Text = autos1.Matricula.ToString();
+                textMode.Text = autos1.Modelo.ToString();
+                textPrec.Text = autos1.Precio.ToString();
+                textMarca.Text = autos1.Marca.ToString();
+                textColor.Text = autos1.Color.ToString();
             }
             
             /*if (txtMatricula.Text == "" && txtModelo.Text == "")
@@ -129,41 +130,21 @@ namespace Venta_de_autos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            try
+            //StreamReader leer = new StreamReader(@"C:\Users\sport\Desktop\Autos.txt");
+            //txtMatricula.Text = "****";
+            if (File.Exists(@"C:\Users\sport\Desktop\Autos.txt"))
             {
-                string ruta = @"C:\Users\sport\Desktop\Autos.txt";
-
-                //Obtienes las líneas del archivo de texto
-                string[] lineas = File.ReadAllLines(ruta);
-
-                //Si hay líneas ...
-                if (lineas.Length > 0)
+                try
                 {
-                    //Si en la colección obtenida existe el valor a eliminar
-                    if (lineas.Contains(txtMatricula.Text))
-                    {
-                        //Creo un nuevo archivo sustituyendo al otro
-                        //Si alguna línea es igual al valor a eliminar no lo tomo
-                        File.WriteAllLines(ruta, lineas.Where(x => x.Trim() != txtMatricula.Text));
-
-                        MessageBox.Show("El registro fue borrado!");
-                    }
-                    else
-                    {
-                        MessageBox.Show(string.Format("No existe el nombre '{0}' en ninguna de las líneas.",
-                                                txtMatricula.Text));
-                    }
+                    File.Delete(@"C:\Users\sport\Desktop\Autos.txt");
+                    MessageBox.Show("Se elimino el archivo exitosamente");
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("El archivo no contiene líneas para leer.");
+                    MessageBox.Show("Presione nuevamente para eliminar el archivo");
                 }
-            }
-            catch (Exception ex)
-            {
-                //Si se produce un error al eliminar lo mostramos
-                MessageBox.Show(ex.Message);
             }
         }
+    
     }
 }

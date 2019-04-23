@@ -67,6 +67,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = global::Venta_de_autos.Properties.Resources._88705;
             this.button4.Location = new System.Drawing.Point(6, 148);
             this.button4.Name = "button4";
@@ -77,6 +78,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Image = global::Venta_de_autos.Properties.Resources._88705;
             this.button3.Location = new System.Drawing.Point(6, 105);
             this.button3.Name = "button3";
@@ -87,20 +89,23 @@
             // btnClient
             // 
             this.btnClient.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClient.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnClient.Image = global::Venta_de_autos.Properties.Resources._88705;
+            this.btnClient.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnClient.Location = new System.Drawing.Point(6, 62);
             this.btnClient.Name = "btnClient";
             this.btnClient.Size = new System.Drawing.Size(276, 37);
             this.btnClient.TabIndex = 1;
-            this.btnClient.Text = "Clientes";
+            this.btnClient.Text = "Registro de clientes";
             this.btnClient.UseVisualStyleBackColor = true;
             this.btnClient.Click += new System.EventHandler(this.btnClient_Click);
             // 
             // btnAut
             // 
             this.btnAut.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAut.ForeColor = System.Drawing.Color.Black;
+            this.btnAut.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAut.Image = global::Venta_de_autos.Properties.Resources._88705;
+            this.btnAut.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAut.Location = new System.Drawing.Point(6, 19);
             this.btnAut.Name = "btnAut";
             this.btnAut.Size = new System.Drawing.Size(276, 37);
@@ -132,6 +137,7 @@
             this.label1.Size = new System.Drawing.Size(201, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "Ventana de Menú";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // formMenu
             // 

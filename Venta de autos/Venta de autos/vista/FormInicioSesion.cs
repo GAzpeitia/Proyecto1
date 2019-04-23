@@ -10,8 +10,8 @@ namespace Venta_de_autos
     public partial class FormInicioSesion : Form
     {
         //mi conexion
-        MySqlConnection connection = new MySqlConnection();
-        String connectionString;
+        //MySqlConnection connection = new MySqlConnection();
+        //String connectionString;
         public FormInicioSesion()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Venta_de_autos
             {
                 Form FormMenu = new formMenu();
                 FormMenu.Show();
-                try
+                /*try
                 {
                     connectionString = "server=localhost;database=empresa_venta_auto;user id=root;password=;";
                     connection.ConnectionString = connectionString;
@@ -34,28 +34,8 @@ namespace Venta_de_autos
                 catch (MySqlException)
                 {
                     MessageBox.Show("Error de Conexion, :( ");
-                }
+                }*/
             }
-            /*if (this.TxtUsuario.Text == "Admin" && TxtPassword.Text == "123")
-            {
-                Form FormMenu = new formMenu();
-                FormMenu.Show();
-                MySqlConnection conectar = new MySqlConnection("server=localhost;database=empresa_venta_auto;user id=root;password=;");
-                MessageBox.Show("Estas conectado");
-
-
-                //conectar.Open();
-                // return conectar;
-                TxtUsuario.Text = "";
-                TxtPassword.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("Error de autenticación!!!");
-            }*/
-
-
-
         }
 
         private void TxtUsuario_TextChanged(object sender, EventArgs e)

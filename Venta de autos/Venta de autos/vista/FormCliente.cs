@@ -95,7 +95,18 @@ namespace Venta_de_autos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
+            if (File.Exists(@"C:\Users\sport\Desktop\Clientes.txt"))
+            {
+                try
+                {
+                    File.Delete(@"C:\Users\sport\Desktop\Clientes.txt");
+                    MessageBox.Show("Se elimino el archivo exitosamente");
+                }
+                catch
+                {
+                    MessageBox.Show("Presione nuevamente para eliminar el archivo");
+                }
+            }
         }
     }
 }
