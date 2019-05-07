@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace R2
 {
-    public partial class Form1 : Form
+    public partial class FormFunciones : Form
     {
-        public Form1()
+        public FormFunciones()
         {
             InitializeComponent();
+        }
+
+        private void FormFunciones_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

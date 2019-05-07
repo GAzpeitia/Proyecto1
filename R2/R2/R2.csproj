@@ -46,16 +46,175 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Arreglos\FormArreglos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Arreglos\FormArreglos.Designer.cs">
+      <DependentUpon>FormArreglos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos\FormNumAle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\FormNumAle.Designer.cs">
+      <DependentUpon>FormNumAle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos\FormNumMayMin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\FormNumMayMin.Designer.cs">
+      <DependentUpon>FormNumMayMin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos\FormNumVoCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\FormNumVoCo.Designer.cs">
+      <DependentUpon>FormNumVoCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\FormCali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\FormCali.Designer.cs">
+      <DependentUpon>FormCali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\FormCiclos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\FormCiclos.Designer.cs">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\FormNombres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\FormNombres.Designer.cs">
+      <DependentUpon>FormNombres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\FormSaludar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\FormSaludar.Designer.cs">
+      <DependentUpon>FormSaludar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormList1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormList1.Designer.cs">
+      <DependentUpon>FormList1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista2.Designer.cs">
+      <DependentUpon>FormLista2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista3.Designer.cs">
+      <DependentUpon>FormLista3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Nombres\FormLista4.Designer.cs">
+      <DependentUpon>FormLista4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormCondicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormCondicionales.Designer.cs">
+      <DependentUpon>FormCondicionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormForGene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormForGene.Designer.cs">
+      <DependentUpon>FormForGene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormTiendaLlantera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormTiendaLlantera.Designer.cs">
+      <DependentUpon>FormTiendaLlantera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormVoCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormVoCo.Designer.cs">
+      <DependentUpon>FormVoCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones\FormFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FormFunciones.Designer.cs">
+      <DependentUpon>FormFunciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Secuenciales\FormSecuanciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormSecuanciales.Designer.cs">
+      <DependentUpon>FormSecuanciales.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Arreglos\FormArreglos.resx">
+      <DependentUpon>FormArreglos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\FormNumAle.resx">
+      <DependentUpon>FormNumAle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\FormNumMayMin.resx">
+      <DependentUpon>FormNumMayMin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\FormNumVoCo.resx">
+      <DependentUpon>FormNumVoCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\FormCali.resx">
+      <DependentUpon>FormCali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\FormCiclos.resx">
+      <DependentUpon>FormCiclos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\FormNombres.resx">
+      <DependentUpon>FormNombres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\FormSaludar.resx">
+      <DependentUpon>FormSaludar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Nombres\FormList1.resx">
+      <DependentUpon>FormList1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Nombres\FormLista2.resx">
+      <DependentUpon>FormLista2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Nombres\FormLista3.resx">
+      <DependentUpon>FormLista3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Nombres\FormLista4.resx">
+      <DependentUpon>FormLista4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormCondicionales.resx">
+      <DependentUpon>FormCondicionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormForGene.resx">
+      <DependentUpon>FormForGene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormTiendaLlantera.resx">
+      <DependentUpon>FormTiendaLlantera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormVoCo.resx">
+      <DependentUpon>FormVoCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\FormFunciones.resx">
+      <DependentUpon>FormFunciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +225,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Secuenciales\FormSecuanciales.resx">
+      <DependentUpon>FormSecuanciales.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +240,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ciclos\Calificaciones\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

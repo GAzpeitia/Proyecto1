@@ -1,6 +1,6 @@
 ﻿namespace R2
 {
-    partial class Form1
+    partial class FormInicio
     {
         /// <summary>
         /// Required designer variable.
@@ -66,6 +66,7 @@
             this.btnIr.TabIndex = 2;
             this.btnIr.Text = "Ir";
             this.btnIr.UseVisualStyleBackColor = true;
+            this.btnIr.Click += new System.EventHandler(this.btnIr_Click);
             // 
             // btnSalir
             // 
@@ -75,6 +76,7 @@
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form1
             // 
