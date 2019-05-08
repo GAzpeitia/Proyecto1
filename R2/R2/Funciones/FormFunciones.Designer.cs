@@ -31,18 +31,18 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCom = new System.Windows.Forms.Button();
+            this.btnAmi = new System.Windows.Forms.Button();
+            this.btnPerf = new System.Windows.Forms.Button();
+            this.btnDiv = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(222, 39);
+            this.btnRegresar.Location = new System.Drawing.Point(6, 19);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(75, 23);
+            this.btnRegresar.Size = new System.Drawing.Size(75, 75);
             this.btnRegresar.TabIndex = 0;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
@@ -62,47 +62,51 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(151, 9);
+            this.label1.Location = new System.Drawing.Point(138, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 25);
+            this.label1.Size = new System.Drawing.Size(271, 25);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Ejercicios de Arreglos";
+            this.label1.Text = "Ejercicios de Funciones";
             // 
-            // button4
+            // btnCom
             // 
-            this.button4.Location = new System.Drawing.Point(164, 180);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(357, 29);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Listas de alumnos";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCom.Location = new System.Drawing.Point(164, 180);
+            this.btnCom.Name = "btnCom";
+            this.btnCom.Size = new System.Drawing.Size(357, 29);
+            this.btnCom.TabIndex = 9;
+            this.btnCom.Text = "Números combinatorios";
+            this.btnCom.UseVisualStyleBackColor = true;
+            this.btnCom.Click += new System.EventHandler(this.btnCom_Click);
             // 
-            // button3
+            // btnAmi
             // 
-            this.button3.Location = new System.Drawing.Point(14, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(357, 29);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Calcular el número de carácteres, vocales y consonantes";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAmi.Location = new System.Drawing.Point(14, 145);
+            this.btnAmi.Name = "btnAmi";
+            this.btnAmi.Size = new System.Drawing.Size(357, 29);
+            this.btnAmi.TabIndex = 8;
+            this.btnAmi.Text = "Números amigos";
+            this.btnAmi.UseVisualStyleBackColor = true;
+            this.btnAmi.Click += new System.EventHandler(this.btnAmi_Click);
             // 
-            // button2
+            // btnPerf
             // 
-            this.button2.Location = new System.Drawing.Point(164, 110);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(357, 29);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Número mayor y número menor";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPerf.Location = new System.Drawing.Point(164, 110);
+            this.btnPerf.Name = "btnPerf";
+            this.btnPerf.Size = new System.Drawing.Size(357, 29);
+            this.btnPerf.TabIndex = 7;
+            this.btnPerf.Text = "Número perfecto";
+            this.btnPerf.UseVisualStyleBackColor = true;
+            this.btnPerf.Click += new System.EventHandler(this.btnPerf_Click);
             // 
-            // button1
+            // btnDiv
             // 
-            this.button1.Location = new System.Drawing.Point(14, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(357, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Números aleatorios";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDiv.Location = new System.Drawing.Point(14, 75);
+            this.btnDiv.Name = "btnDiv";
+            this.btnDiv.Size = new System.Drawing.Size(357, 29);
+            this.btnDiv.TabIndex = 6;
+            this.btnDiv.Text = "División";
+            this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
             // FormFunciones
             // 
@@ -111,10 +115,10 @@
             this.ClientSize = new System.Drawing.Size(534, 357);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCom);
+            this.Controls.Add(this.btnAmi);
+            this.Controls.Add(this.btnPerf);
+            this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormFunciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -130,9 +134,9 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCom;
+        private System.Windows.Forms.Button btnAmi;
+        private System.Windows.Forms.Button btnPerf;
+        private System.Windows.Forms.Button btnDiv;
     }
 }

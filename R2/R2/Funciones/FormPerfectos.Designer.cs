@@ -1,6 +1,6 @@
 ﻿namespace R2
 {
-    partial class FormVoCo
+    partial class FormPerfectos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,77 +30,68 @@
         {
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
-            this.txtAviso = new System.Windows.Forms.TextBox();
+            this.richPerfec = new System.Windows.Forms.RichTextBox();
+            this.txtNum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtRes = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(121, 226);
+            this.btnSalir.Location = new System.Drawing.Point(122, 189);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 5;
+            this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnCal
             // 
-            this.btnCal.Location = new System.Drawing.Point(31, 226);
+            this.btnCal.Location = new System.Drawing.Point(23, 189);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(75, 23);
-            this.btnCal.TabIndex = 4;
+            this.btnCal.TabIndex = 2;
             this.btnCal.Text = "Calcular";
             this.btnCal.UseVisualStyleBackColor = true;
             this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
-            // txtAviso
+            // richPerfec
             // 
-            this.txtAviso.Location = new System.Drawing.Point(6, 189);
-            this.txtAviso.Name = "txtAviso";
-            this.txtAviso.Size = new System.Drawing.Size(374, 20);
-            this.txtAviso.TabIndex = 6;
+            this.richPerfec.Location = new System.Drawing.Point(11, 93);
+            this.richPerfec.Name = "richPerfec";
+            this.richPerfec.Size = new System.Drawing.Size(260, 67);
+            this.richPerfec.TabIndex = 13;
+            this.richPerfec.Text = "";
+            // 
+            // txtNum
+            // 
+            this.txtNum.Location = new System.Drawing.Point(172, 37);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(100, 20);
+            this.txtNum.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 44);
+            this.label1.Location = new System.Drawing.Point(8, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Ingrese su nombre:";
+            this.label1.Size = new System.Drawing.Size(165, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Dame un número entero positívo:";
             // 
-            // txtNom
-            // 
-            this.txtNom.Location = new System.Drawing.Point(106, 41);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(149, 20);
-            this.txtNom.TabIndex = 8;
-            // 
-            // txtRes
-            // 
-            this.txtRes.Location = new System.Drawing.Point(73, 100);
-            this.txtRes.Name = "txtRes";
-            this.txtRes.Size = new System.Drawing.Size(221, 20);
-            this.txtRes.TabIndex = 9;
-            // 
-            // FormVoCo
+            // FormPerfectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 261);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
-            this.Controls.Add(this.txtRes);
-            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.richPerfec);
+            this.Controls.Add(this.txtNum);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtAviso);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCal);
-            this.Name = "FormVoCo";
+            this.Name = "FormPerfectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormVoCo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,9 +101,8 @@
 
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCal;
-        private System.Windows.Forms.TextBox txtAviso;
+        private System.Windows.Forms.RichTextBox richPerfec;
+        private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNom;
-        private System.Windows.Forms.TextBox txtRes;
     }
 }

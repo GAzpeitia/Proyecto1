@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace R2.Condicionales
+namespace R2
 {
     public partial class FormForGene : Form
     {
@@ -50,6 +50,11 @@ namespace R2.Condicionales
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormForGene_Load(object sender, EventArgs e)
         {
 
         }

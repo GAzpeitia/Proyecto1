@@ -1,4 +1,4 @@
-﻿namespace R2.Condicionales
+﻿namespace R2
 {
     partial class FormForGene
     {
@@ -163,6 +163,7 @@
             this.Controls.Add(this.btnCal);
             this.Name = "FormForGene";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormForGene_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

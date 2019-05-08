@@ -76,5 +76,10 @@ namespace R2
         {
             this.Close();
         }
+
+        private void FormVoCo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

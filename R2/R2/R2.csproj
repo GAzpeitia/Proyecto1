@@ -130,6 +130,24 @@
     <Compile Include="Condicionales\FormForGene.Designer.cs">
       <DependentUpon>FormForGene.cs</DependentUpon>
     </Compile>
+    <Compile Include="Condicionales\FormMayuMinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormMayuMinu.Designer.cs">
+      <DependentUpon>FormMayuMinu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormMeses.Designer.cs">
+      <DependentUpon>FormMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condicionales\FormNumeLetra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Condicionales\FormNumeLetra.Designer.cs">
+      <DependentUpon>FormNumeLetra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Condicionales\FormTiendaLlantera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,11 +166,35 @@
     <Compile Include="FormInicio.Designer.cs">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funciones\FormAmigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FormAmigo.Designer.cs">
+      <DependentUpon>FormAmigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones\FormCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FormCom.Designer.cs">
+      <DependentUpon>FormCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones\FormDiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FormDiv.Designer.cs">
+      <DependentUpon>FormDiv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funciones\FormFunciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Funciones\FormFunciones.Designer.cs">
       <DependentUpon>FormFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funciones\FormPerfectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones\FormPerfectos.Designer.cs">
+      <DependentUpon>FormPerfectos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,6 +203,60 @@
     </Compile>
     <Compile Include="Secuenciales\FormSecuanciales.Designer.cs">
       <DependentUpon>FormSecuanciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormArticulo.Designer.cs">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormHipotenusa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormHipotenusa.Designer.cs">
+      <DependentUpon>FormHipotenusa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormHospital.Designer.cs">
+      <DependentUpon>FormHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormMasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormMasa.Designer.cs">
+      <DependentUpon>FormMasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormRaices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec2\FormRaices.Designer.cs">
+      <DependentUpon>FormRaices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormCambioDivisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormCambioDivisa.Designer.cs">
+      <DependentUpon>FormCambioDivisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormFrecuenciaCardiaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormFrecuenciaCardiaca.Designer.cs">
+      <DependentUpon>FormFrecuenciaCardiaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormIncrementoSalarial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormIncrementoSalarial.Designer.cs">
+      <DependentUpon>FormIncrementoSalarial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormValorAbsoluto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secuenciales\FormsSec\FormValorAbsoluto.Designer.cs">
+      <DependentUpon>FormValorAbsoluto.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Arreglos\FormArreglos.resx">
       <DependentUpon>FormArreglos.cs</DependentUpon>
@@ -204,6 +300,15 @@
     <EmbeddedResource Include="Condicionales\FormForGene.resx">
       <DependentUpon>FormForGene.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormMayuMinu.resx">
+      <DependentUpon>FormMayuMinu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormMeses.resx">
+      <DependentUpon>FormMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Condicionales\FormNumeLetra.resx">
+      <DependentUpon>FormNumeLetra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Condicionales\FormTiendaLlantera.resx">
       <DependentUpon>FormTiendaLlantera.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,8 +318,20 @@
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\FormAmigo.resx">
+      <DependentUpon>FormAmigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\FormCom.resx">
+      <DependentUpon>FormCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\FormDiv.resx">
+      <DependentUpon>FormDiv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Funciones\FormFunciones.resx">
       <DependentUpon>FormFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funciones\FormPerfectos.resx">
+      <DependentUpon>FormPerfectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -227,6 +344,33 @@
     </Compile>
     <EmbeddedResource Include="Secuenciales\FormSecuanciales.resx">
       <DependentUpon>FormSecuanciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec2\FormArticulo.resx">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec2\FormHipotenusa.resx">
+      <DependentUpon>FormHipotenusa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec2\FormHospital.resx">
+      <DependentUpon>FormHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec2\FormMasa.resx">
+      <DependentUpon>FormMasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec2\FormRaices.resx">
+      <DependentUpon>FormRaices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec\FormCambioDivisa.resx">
+      <DependentUpon>FormCambioDivisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec\FormFrecuenciaCardiaca.resx">
+      <DependentUpon>FormFrecuenciaCardiaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec\FormIncrementoSalarial.resx">
+      <DependentUpon>FormIncrementoSalarial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secuenciales\FormsSec\FormValorAbsoluto.resx">
+      <DependentUpon>FormValorAbsoluto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

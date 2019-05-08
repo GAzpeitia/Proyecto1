@@ -26,5 +26,29 @@ namespace R2
         {
             this.Close();
         }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            Form form12 = new FormDiv();
+            form12.Show();
+        }
+
+        private void btnPerf_Click(object sender, EventArgs e)
+        {
+            Form form13 = new FormPerfectos();
+            form13.Show();
+        }
+
+        private void btnAmi_Click(object sender, EventArgs e)
+        {
+            Form formQw = new FormAmigo();
+            formQw.Show();
+        }
+
+        private void btnCom_Click(object sender, EventArgs e)
+        {
+            Form form122 = new FormCom();
+            form122.Show();
+        }
     }
 }

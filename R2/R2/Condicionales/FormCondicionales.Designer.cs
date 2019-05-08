@@ -64,11 +64,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(148, 9);
+            this.label1.Location = new System.Drawing.Point(114, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 25);
+            this.label1.Size = new System.Drawing.Size(310, 25);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Ejercicios de Arreglos";
+            this.label1.Text = "Ejercicios de Condicionales";
             // 
             // btnMayMin
             // 
@@ -78,6 +78,7 @@
             this.btnMayMin.TabIndex = 9;
             this.btnMayMin.Text = "Mayúsculas y minúsculas";
             this.btnMayMin.UseVisualStyleBackColor = true;
+            this.btnMayMin.Click += new System.EventHandler(this.btnMayMin_Click);
             // 
             // btnVoCo
             // 
@@ -87,6 +88,7 @@
             this.btnVoCo.TabIndex = 8;
             this.btnVoCo.Text = "Comprobar si es vocal o consonante";
             this.btnVoCo.UseVisualStyleBackColor = true;
+            this.btnVoCo.Click += new System.EventHandler(this.btnVoCo_Click);
             // 
             // btnGeneral
             // 
@@ -96,6 +98,7 @@
             this.btnGeneral.TabIndex = 7;
             this.btnGeneral.Text = "Fórmula general";
             this.btnGeneral.UseVisualStyleBackColor = true;
+            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
             // 
             // btnTienda
             // 
@@ -124,6 +127,7 @@
             this.btnLetra.TabIndex = 12;
             this.btnLetra.Text = "Conversión de un número en letra";
             this.btnLetra.UseVisualStyleBackColor = true;
+            this.btnLetra.Click += new System.EventHandler(this.btnLetra_Click);
             // 
             // FormCondicionales
             // 

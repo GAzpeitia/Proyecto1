@@ -32,5 +32,29 @@ namespace R2
             Form form1 = new FormTiendaLlantera();
             form1.Show();
         }
+
+        private void btnGeneral_Click(object sender, EventArgs e)
+        {
+            Form form7 = new FormForGene();
+            form7.Show();
+        }
+
+        private void btnVoCo_Click(object sender, EventArgs e)
+        {
+            Form form4 = new FormVoCo();
+            form4.Show();
+        }
+
+        private void btnMayMin_Click(object sender, EventArgs e)
+        {
+            Form form4w = new FormMayuMinu();
+            form4w.Show();
+        }
+
+        private void btnLetra_Click(object sender, EventArgs e)
+        {
+            Form form4s = new FormNumeLetra();
+            form4s.Show();
+        }
     }
 }
