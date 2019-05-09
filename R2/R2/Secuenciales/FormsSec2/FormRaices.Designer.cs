@@ -37,6 +37,7 @@
             this.txtC = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +66,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(117, 209);
+            this.btnSalir.Location = new System.Drawing.Point(109, 209);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 22;
@@ -115,12 +116,24 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Ingrese el valor de c:";
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(200, 209);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 51;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormRaices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtC);
@@ -149,5 +162,6 @@
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnLim;
     }
 }

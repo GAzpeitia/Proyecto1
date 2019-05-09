@@ -35,6 +35,7 @@
             this.txtRes1 = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtRes2
@@ -79,7 +80,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(283, 230);
+            this.btnSalir.Location = new System.Drawing.Point(283, 205);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 43;
@@ -89,7 +90,7 @@
             // 
             // btnCal
             // 
-            this.btnCal.Location = new System.Drawing.Point(283, 184);
+            this.btnCal.Location = new System.Drawing.Point(283, 160);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(75, 23);
             this.btnCal.TabIndex = 42;
@@ -97,12 +98,24 @@
             this.btnCal.UseVisualStyleBackColor = true;
             this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(283, 243);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 49;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormHipotenusa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(376, 286);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.txtRes2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,5 +140,6 @@
         private System.Windows.Forms.TextBox txtRes1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCal;
+        private System.Windows.Forms.Button btnLim;
     }
 }

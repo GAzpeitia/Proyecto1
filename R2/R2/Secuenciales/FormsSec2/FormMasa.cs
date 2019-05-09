@@ -19,11 +19,12 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double imc = 0, altu = 0, masa = 0;
-            String nom = "";
-            txtRes1.Text = nom;
-            txtRes2.Text = masa.ToString();
-            txtRes3.Text = altu.ToString();
+            double imc, altu, masa;
+            String nom;
+
+            masa = double.Parse(txtRes2.Text);
+            altu = double.Parse(txtRes3.Text);
+            nom = txtRes1.Text;
 
                 imc = masa / altu;
             richRes.Text = "\nEl IMC es de: " + imc;
@@ -34,6 +35,14 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtRes1.Text = "";
+            txtRes2.Text = "";
+            txtRes3.Text = "";
+            richRes.Text = "";
         }
     }
 }

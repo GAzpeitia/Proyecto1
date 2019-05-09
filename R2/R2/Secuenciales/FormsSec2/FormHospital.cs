@@ -24,9 +24,9 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double can = 0;
-            double gine = 0, trau = 0, ped = 0;
-            txtCant.Text = can.ToString();
+            double can;
+            double gine, trau, ped;
+            can = double.Parse(txtCant.Text);
 
                 gine = (40 * can) / 100;
                 trau = (30 * can) / 100;
@@ -40,6 +40,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtCant.Text = "";
+            richRes.Text = "";
         }
     }
 }

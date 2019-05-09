@@ -29,6 +29,7 @@ namespace R2
             for (int i = 0; i < array.Length; i++)
             {
                 var v = random.Next(1, 50);
+                listNum.Items.Add("Conteo [" + i + "] = " + v);
                 array[i] = v;
             }
             txtNumMay.Text = array.Max().ToString();
@@ -39,6 +40,13 @@ namespace R2
         private void FormNumMayMin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtNumMay.Text = "";
+            txtNumMin.Text = "";
+            listNum.Text = "";
         }
     }
 }

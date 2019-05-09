@@ -19,10 +19,10 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double fcm = 0;
+            double fcm;
             double lpm = 220;
-            int eda = 0;
-            txt1.Text = eda.ToString();
+            int eda;
+            eda = int.Parse(txt1.Text);
 
                 fcm = lpm - eda;
             richRes.Text = "Su frecuencia máxima es: " + fcm;
@@ -31,6 +31,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            richRes.Text = "";
         }
     }
 }

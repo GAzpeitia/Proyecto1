@@ -35,6 +35,7 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.rich1 = new System.Windows.Forms.RichTextBox();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCal
@@ -97,12 +98,24 @@
             this.rich1.TabIndex = 8;
             this.rich1.Text = "";
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(197, 197);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 9;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormDiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(284, 240);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.rich1);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
@@ -126,5 +139,6 @@
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.RichTextBox rich1;
+        private System.Windows.Forms.Button btnLim;
     }
 }

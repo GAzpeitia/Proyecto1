@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCant = new System.Windows.Forms.TextBox();
             this.txtMen = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCal
@@ -84,6 +85,7 @@
             // 
             // txtCant
             // 
+            this.txtCant.Enabled = false;
             this.txtCant.Location = new System.Drawing.Point(156, 86);
             this.txtCant.Name = "txtCant";
             this.txtCant.Size = new System.Drawing.Size(100, 20);
@@ -91,17 +93,30 @@
             // 
             // txtMen
             // 
+            this.txtMen.Enabled = false;
             this.txtMen.Location = new System.Drawing.Point(11, 114);
             this.txtMen.Name = "txtMen";
             this.txtMen.Size = new System.Drawing.Size(269, 20);
             this.txtMen.TabIndex = 6;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(197, 215);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 7;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FormTiendaLlantera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtMen);
             this.Controls.Add(this.txtCant);
             this.Controls.Add(this.label2);
@@ -125,5 +140,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCant;
         private System.Windows.Forms.TextBox txtMen;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

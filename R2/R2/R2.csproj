@@ -52,6 +52,12 @@
     <Compile Include="Arreglos\FormArreglos.Designer.cs">
       <DependentUpon>FormArreglos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Arreglos\FormListAlu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\FormListAlu.Designer.cs">
+      <DependentUpon>FormListAlu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Arreglos\FormNumAle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,42 @@
     </Compile>
     <Compile Include="Arreglos\FormNumVoCo.Designer.cs">
       <DependentUpon>FormNumVoCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos\ListaAlumnos\FormLia2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\ListaAlumnos\FormLia2.Designer.cs">
+      <DependentUpon>FormLia2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos\ListaAlumnos\FormLista1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arreglos\ListaAlumnos\FormLista1.Designer.cs">
+      <DependentUpon>FormLista1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL1.Designer.cs">
+      <DependentUpon>FormL1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL2.Designer.cs">
+      <DependentUpon>FormL2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL3.Designer.cs">
+      <DependentUpon>FormL3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciclos\Calificaciones\FormL4.Designer.cs">
+      <DependentUpon>FormL4.cs</DependentUpon>
     </Compile>
     <Compile Include="Ciclos\FormCali.cs">
       <SubType>Form</SubType>
@@ -261,6 +303,9 @@
     <EmbeddedResource Include="Arreglos\FormArreglos.resx">
       <DependentUpon>FormArreglos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\FormListAlu.resx">
+      <DependentUpon>FormListAlu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Arreglos\FormNumAle.resx">
       <DependentUpon>FormNumAle.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +314,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Arreglos\FormNumVoCo.resx">
       <DependentUpon>FormNumVoCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\ListaAlumnos\FormLia2.resx">
+      <DependentUpon>FormLia2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arreglos\ListaAlumnos\FormLista1.resx">
+      <DependentUpon>FormLista1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Calificaciones\FormL1.resx">
+      <DependentUpon>FormL1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Calificaciones\FormL2.resx">
+      <DependentUpon>FormL2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Calificaciones\FormL3.resx">
+      <DependentUpon>FormL3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciclos\Calificaciones\FormL4.resx">
+      <DependentUpon>FormL4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ciclos\FormCali.resx">
       <DependentUpon>FormCali.cs</DependentUpon>
@@ -385,9 +448,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ciclos\Calificaciones\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

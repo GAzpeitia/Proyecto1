@@ -35,6 +35,7 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCal
@@ -55,6 +56,7 @@
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // rich1
             // 
@@ -96,12 +98,24 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Ingrese el primer número:";
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(231, 225);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 14;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormAmigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(347, 279);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.rich1);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
@@ -126,5 +140,6 @@
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLim;
     }
 }

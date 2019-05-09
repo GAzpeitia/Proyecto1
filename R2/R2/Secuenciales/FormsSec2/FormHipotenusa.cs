@@ -24,9 +24,9 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double c = 0, a = 0, b = 0;
-            txtRes1.Text = a.ToString();
-            txtRes2.Text = b.ToString();
+            double c, a, b;
+            a = double.Parse(txtRes1.Text);
+            b = double.Parse(txtRes2.Text);
 
                 c = Math.Sqrt((Math.Pow(a, 2) + Math.Pow(b, 2)));
             richRes.Text = "\nLa hipotenusa es: " + c;
@@ -37,6 +37,13 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtRes1.Text = "";
+            txtRes2.Text = "";
+            richRes.Text = "";
         }
     }
 }

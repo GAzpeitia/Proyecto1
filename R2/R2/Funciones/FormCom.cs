@@ -19,12 +19,10 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            int m = 0, n = 0, com = 1, com1 = 1, com2 = 1;
+            int m, n, com = 1, com1 = 1, com2 = 1;
             int res = 0;
-
-            txtNum1.Text = m.ToString();
-
-            txtNum2.Text = n.ToString();
+            m = int.Parse(txtNum1.Text);
+            n = int.Parse(txtNum2.Text);
 
             if (m < n)
             {
@@ -64,6 +62,18 @@ namespace R2
             res = com / (com1 * com2);
 
             rich1.Text = "\nEl valor de m es: " + m + "\nEl valor de n es: " + n + "\nEl valor combinado es: " + res;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtNum1.Text = "";
+            txtNum2.Text = "";
+            rich1.Text = "";
         }
     }
 }

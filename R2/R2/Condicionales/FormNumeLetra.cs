@@ -30,8 +30,8 @@ namespace R2
                 "sesenta", "setenta", "ochenta", "noventa"};
 
             Console.WriteLine("\nIngrese un numero entre 0-100000: ");
-            int num = 0;
-            txtNum.Text = num.ToString();
+            int num;
+            num = int.Parse(txtNum.Text);
 
             if (num >= 0 && num < 11)
                 txtLetra.Text = '\n' + unidades[num];

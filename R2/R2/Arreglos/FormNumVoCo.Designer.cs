@@ -40,6 +40,7 @@
             this.txtCara = new System.Windows.Forms.TextBox();
             this.txtVoc = new System.Windows.Forms.TextBox();
             this.txtConso = new System.Windows.Forms.TextBox();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCal
@@ -116,6 +117,7 @@
             // 
             // txtNumP
             // 
+            this.txtNumP.Enabled = false;
             this.txtNumP.Location = new System.Drawing.Point(179, 63);
             this.txtNumP.Name = "txtNumP";
             this.txtNumP.Size = new System.Drawing.Size(48, 20);
@@ -123,6 +125,7 @@
             // 
             // txtCara
             // 
+            this.txtCara.Enabled = false;
             this.txtCara.Location = new System.Drawing.Point(179, 93);
             this.txtCara.Name = "txtCara";
             this.txtCara.Size = new System.Drawing.Size(48, 20);
@@ -130,6 +133,7 @@
             // 
             // txtVoc
             // 
+            this.txtVoc.Enabled = false;
             this.txtVoc.Location = new System.Drawing.Point(179, 124);
             this.txtVoc.Name = "txtVoc";
             this.txtVoc.Size = new System.Drawing.Size(48, 20);
@@ -137,10 +141,21 @@
             // 
             // txtConso
             // 
+            this.txtConso.Enabled = false;
             this.txtConso.Location = new System.Drawing.Point(179, 153);
             this.txtConso.Name = "txtConso";
             this.txtConso.Size = new System.Drawing.Size(48, 20);
             this.txtConso.TabIndex = 11;
+            // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(251, 202);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 12;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
             // 
             // FormNumVoCo
             // 
@@ -148,6 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.txtConso);
             this.Controls.Add(this.txtVoc);
             this.Controls.Add(this.txtCara);
@@ -182,5 +198,6 @@
         private System.Windows.Forms.TextBox txtCara;
         private System.Windows.Forms.TextBox txtVoc;
         private System.Windows.Forms.TextBox txtConso;
+        private System.Windows.Forms.Button btnLim;
     }
 }

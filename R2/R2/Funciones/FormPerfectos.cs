@@ -20,8 +20,8 @@ namespace R2
         private void btnCal_Click(object sender, EventArgs e)
         {
             int sum = 0;
-            int num = 0;
-            txtNum.Text = num.ToString(); 
+            int num;
+            num = int.Parse(txtNum.Text); 
 
             if (num > 0)
             {
@@ -53,6 +53,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtNum.Text = "";
+            richPerfec.Text = "";
         }
     }
 }

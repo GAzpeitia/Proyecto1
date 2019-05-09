@@ -24,20 +24,27 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
-            txtRaiz.Text = a.ToString();
-            txtB.Text = b.ToString();
-            txtC.Text = c.ToString();
+            double a, b, c, x1, x2;
+            a = double.Parse(txtRaiz.Text);
+            b = double.Parse(txtB.Text);
+            c = double.Parse(txtC.Text);
 
                 x1 = ((-1 * b) + Math.Sqrt((Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
                 x2 = ((-1 * b) - Math.Sqrt((Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
-            richRes.Text = "x1 es igual: " + x1;
-            richRes.Text = "x2 es igual: " + x2;
+            richRes.Text = "x1 es igual: " + x1 + " y x2 es igual: " + x2;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtB.Text = "";
+            txtC.Text = "";
+            txtRaiz.Text = "";
+            richRes.Text = "";
         }
     }
 }

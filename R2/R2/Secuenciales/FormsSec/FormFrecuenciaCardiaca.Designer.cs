@@ -33,6 +33,7 @@
             this.txt1 = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +62,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(117, 209);
+            this.btnSalir.Location = new System.Drawing.Point(93, 209);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 12;
@@ -79,12 +80,24 @@
             this.btnCal.UseVisualStyleBackColor = true;
             this.btnCal.Click += new System.EventHandler(this.btnCal_Click);
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(174, 209);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 22;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormFrecuenciaCardiaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richRes);
             this.Controls.Add(this.txt1);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCal;
+        private System.Windows.Forms.Button btnLim;
     }
 }

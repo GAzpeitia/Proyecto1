@@ -50,6 +50,7 @@
             // 
             // txtNumAle
             // 
+            this.txtNumAle.Enabled = false;
             this.txtNumAle.Location = new System.Drawing.Point(177, 67);
             this.txtNumAle.Name = "txtNumAle";
             this.txtNumAle.Size = new System.Drawing.Size(100, 20);
@@ -84,6 +85,7 @@
             // 
             // txtNum
             // 
+            this.txtNum.Enabled = false;
             this.txtNum.Location = new System.Drawing.Point(108, 31);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(100, 20);
@@ -91,6 +93,7 @@
             // 
             // txtMedArit
             // 
+            this.txtMedArit.Enabled = false;
             this.txtMedArit.Location = new System.Drawing.Point(105, 104);
             this.txtMedArit.Name = "txtMedArit";
             this.txtMedArit.Size = new System.Drawing.Size(100, 20);
@@ -110,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(320, 249);
             this.ControlBox = false;
             this.Controls.Add(this.btnSalir);

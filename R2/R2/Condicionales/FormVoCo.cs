@@ -81,5 +81,12 @@ namespace R2
         {
 
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtAviso.Text = "";
+            txtNom.Text = "";
+            txtRes.Text = "";
+        }
     }
 }

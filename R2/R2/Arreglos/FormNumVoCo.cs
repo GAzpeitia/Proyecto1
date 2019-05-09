@@ -73,5 +73,15 @@ namespace R2
         {
             this.Close();
         }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtCara.Text = "";
+            txtConso.Text = "";
+            txtEscr.Text = "";
+            txtNumP.Text = "";
+            txtVoc.Text = "";
+
+        }
     }
 }

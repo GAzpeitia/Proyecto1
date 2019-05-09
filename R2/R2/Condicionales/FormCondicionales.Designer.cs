@@ -118,6 +118,7 @@
             this.btnMes.TabIndex = 11;
             this.btnMes.Text = "Meses del año";
             this.btnMes.UseVisualStyleBackColor = true;
+            this.btnMes.Click += new System.EventHandler(this.btnMes_Click);
             // 
             // btnLetra
             // 

@@ -43,6 +43,7 @@
             this.btnSepNom.TabIndex = 12;
             this.btnSepNom.Text = "4. Listar los nombres de estudiantes y sus calificaciones";
             this.btnSepNom.UseVisualStyleBackColor = true;
+            this.btnSepNom.Click += new System.EventHandler(this.btnSepNom_Click);
             // 
             // btnApe
             // 
@@ -53,6 +54,7 @@
             this.btnApe.Text = "3. Listar todos los nombres de estudiantes que son de una institución en específi" +
     "co";
             this.btnApe.UseVisualStyleBackColor = true;
+            this.btnApe.Click += new System.EventHandler(this.btnApe_Click);
             // 
             // btnMay
             // 
@@ -62,6 +64,7 @@
             this.btnMay.TabIndex = 10;
             this.btnMay.Text = "2. Listar todos los nombres de estudiantes que son de una carrera en específico";
             this.btnMay.UseVisualStyleBackColor = true;
+            this.btnMay.Click += new System.EventHandler(this.btnMay_Click);
             // 
             // btnSecuencia
             // 
@@ -71,6 +74,7 @@
             this.btnSecuencia.TabIndex = 9;
             this.btnSecuencia.Text = "1. Listar todos los nombres de estudiantes sin ninguna condición";
             this.btnSecuencia.UseVisualStyleBackColor = true;
+            this.btnSecuencia.Click += new System.EventHandler(this.btnSecuencia_Click);
             // 
             // btnSalir
             // 
@@ -86,6 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(378, 261);
             this.ControlBox = false;
             this.Controls.Add(this.btnSepNom);

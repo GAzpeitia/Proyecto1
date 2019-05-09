@@ -19,14 +19,13 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            int num1 = 0, num2 = 0;
+            int num1, num2;
             int sum1 = 0, sum2 = 0;
+            num1 = int.Parse(txtNum1.Text);
+            //num1 = Convert.ToInt32(Console.ReadLine());
 
-            txtNum1.Text = num1.ToString();
-            num1 = Convert.ToInt32(Console.ReadLine());
-
-            txtNum2.Text = num2.ToString();
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = int.Parse(txtNum2.Text);
+            //num2 = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 1; i <= num1 / 2; i++)
             {
@@ -57,13 +56,25 @@ namespace R2
             }
             else
             {
-                rich1.Text = "Los números deben ser positivos";
+                rich1.Text = "Los números deben ser positivos o no son amigos";
             }
         }
 
         private void FormAmigo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtNum1.Text = "";
+            txtNum2.Text = "";
+            rich1.Text = "";
         }
     }
 }

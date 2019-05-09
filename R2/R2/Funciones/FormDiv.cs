@@ -19,12 +19,11 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            int num1 = 2, num2 = 1;
+            int num1, num2;
             int Resto1;
             int Resultado1;
-
-            txtNum1.Text = num1.ToString();
-            txtNum2.Text = num2.ToString();
+            num1 = int.Parse(txtNum1.Text);
+            num2 = int.Parse(txtNum2.Text);
 
             if ((num1 > 0) && (num2 > 0))
             {
@@ -42,6 +41,13 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtNum1.Text = "";
+            txtNum2.Text = "";
+            rich1.Text = "";
         }
     }
 }

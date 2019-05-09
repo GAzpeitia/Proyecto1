@@ -19,8 +19,8 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double salario = 0, salTot = 0, salP = 0;
-            txtSal.Text = salario.ToString();
+            double salario, salTot, salP;
+            salario = double.Parse(txtSal.Text);
 
                 salTot = salario * 0.25;
                 salP = salTot + salario;
@@ -31,6 +31,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtSal.Text = "";
+            richRes.Text = "";
         }
     }
 }

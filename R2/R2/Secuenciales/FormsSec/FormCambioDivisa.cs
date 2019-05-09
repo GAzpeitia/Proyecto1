@@ -35,5 +35,11 @@ namespace R2
         {
             this.Close();
         }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            richRes.Text = "";
+        }
     }
 }

@@ -33,6 +33,7 @@
             this.txt1 = new System.Windows.Forms.TextBox();
             this.richRes = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCal
@@ -47,7 +48,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(117, 213);
+            this.btnSalir.Location = new System.Drawing.Point(93, 213);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -79,12 +80,24 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "¿Cuántos pesos mexicanos desea convertir?";
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(181, 213);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 6;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormCambioDivisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richRes);
             this.Controls.Add(this.txt1);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.RichTextBox richRes;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLim;
     }
 }

@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtRes1 = new System.Windows.Forms.TextBox();
             this.txtRes2 = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -131,6 +132,7 @@
             // 
             // txtRes1
             // 
+            this.txtRes1.Enabled = false;
             this.txtRes1.Location = new System.Drawing.Point(47, 149);
             this.txtRes1.Name = "txtRes1";
             this.txtRes1.Size = new System.Drawing.Size(83, 20);
@@ -138,17 +140,30 @@
             // 
             // txtRes2
             // 
+            this.txtRes2.Enabled = false;
             this.txtRes2.Location = new System.Drawing.Point(183, 149);
             this.txtRes2.Name = "txtRes2";
             this.txtRes2.Size = new System.Drawing.Size(83, 20);
             this.txtRes2.TabIndex = 13;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(191, 226);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 14;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FormForGene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtRes2);
             this.Controls.Add(this.txtRes1);
             this.Controls.Add(this.label5);
@@ -183,5 +198,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtRes1;
         private System.Windows.Forms.TextBox txtRes2;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtRes = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -58,7 +60,8 @@
             // 
             // txtAviso
             // 
-            this.txtAviso.Location = new System.Drawing.Point(6, 189);
+            this.txtAviso.Enabled = false;
+            this.txtAviso.Location = new System.Drawing.Point(6, 172);
             this.txtAviso.Name = "txtAviso";
             this.txtAviso.Size = new System.Drawing.Size(374, 20);
             this.txtAviso.TabIndex = 6;
@@ -66,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 44);
+            this.label1.Location = new System.Drawing.Point(9, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 7;
@@ -74,24 +77,47 @@
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(106, 41);
+            this.txtNom.Location = new System.Drawing.Point(121, 41);
             this.txtNom.Name = "txtNom";
             this.txtNom.Size = new System.Drawing.Size(149, 20);
             this.txtNom.TabIndex = 8;
             // 
             // txtRes
             // 
+            this.txtRes.Enabled = false;
             this.txtRes.Location = new System.Drawing.Point(73, 100);
             this.txtRes.Name = "txtRes";
             this.txtRes.Size = new System.Drawing.Size(221, 20);
             this.txtRes.TabIndex = 9;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Mensaje de aviso";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(219, 226);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FormVoCo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(392, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtRes);
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.label1);
@@ -114,5 +140,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.TextBox txtRes;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

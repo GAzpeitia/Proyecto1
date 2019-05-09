@@ -48,5 +48,11 @@ namespace R2
             Form form2 = new FormNumVoCo();
             form2.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form formEs = new FormListAlu();
+            formEs.Show();
+        }
     }
 }

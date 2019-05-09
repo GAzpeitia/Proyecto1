@@ -32,5 +32,10 @@ namespace R2
             txtMay.Text = name.ToUpper();
             txtMin.Text = name.ToLower();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

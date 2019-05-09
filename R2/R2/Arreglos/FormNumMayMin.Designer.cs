@@ -34,6 +34,8 @@
             this.txtNumMin = new System.Windows.Forms.TextBox();
             this.btnCal = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.listNum = new System.Windows.Forms.ListBox();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +58,7 @@
             // 
             // txtNumMay
             // 
+            this.txtNumMay.Enabled = false;
             this.txtNumMay.Location = new System.Drawing.Point(96, 38);
             this.txtNumMay.Name = "txtNumMay";
             this.txtNumMay.Size = new System.Drawing.Size(100, 20);
@@ -63,6 +66,7 @@
             // 
             // txtNumMin
             // 
+            this.txtNumMin.Enabled = false;
             this.txtNumMin.Location = new System.Drawing.Point(96, 73);
             this.txtNumMin.Name = "txtNumMin";
             this.txtNumMin.Size = new System.Drawing.Size(100, 20);
@@ -70,7 +74,7 @@
             // 
             // btnCal
             // 
-            this.btnCal.Location = new System.Drawing.Point(39, 140);
+            this.btnCal.Location = new System.Drawing.Point(15, 142);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(75, 23);
             this.btnCal.TabIndex = 4;
@@ -80,7 +84,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(143, 140);
+            this.btnSalir.Location = new System.Drawing.Point(15, 186);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 5;
@@ -88,12 +92,33 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // listNum
+            // 
+            this.listNum.FormattingEnabled = true;
+            this.listNum.Location = new System.Drawing.Point(159, 99);
+            this.listNum.Name = "listNum";
+            this.listNum.Size = new System.Drawing.Size(172, 147);
+            this.listNum.TabIndex = 6;
+            // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(16, 226);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 7;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormNumMayMin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(343, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
+            this.Controls.Add(this.listNum);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCal);
             this.Controls.Add(this.txtNumMin);
@@ -116,5 +141,7 @@
         private System.Windows.Forms.TextBox txtNumMin;
         private System.Windows.Forms.Button btnCal;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ListBox listNum;
+        private System.Windows.Forms.Button btnLim;
     }
 }

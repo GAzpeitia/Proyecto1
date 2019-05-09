@@ -56,5 +56,11 @@ namespace R2
             Form form4s = new FormNumeLetra();
             form4s.Show();
         }
+
+        private void btnMes_Click(object sender, EventArgs e)
+        {
+            Form m = new FormMeses();
+            m.Show();
+        }
     }
 }

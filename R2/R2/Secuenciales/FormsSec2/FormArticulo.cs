@@ -24,10 +24,10 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            String nomArt = "";
-            double pres = 0, gan = 0, tot = 0;
-            txtRes1.Text = nomArt;
-            txtRes2.Text = pres.ToString();
+            String nomArt;
+            double pres, gan, tot;
+            nomArt = txtRes1.Text;
+            pres = double.Parse(txtRes2.Text);
 
                 gan = (pres * 30) / 100;
                 tot = gan + pres;
@@ -38,6 +38,13 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtRes1.Text = "";
+            txtRes2.Text = "";
+            richRes.Text = "";
         }
     }
 }

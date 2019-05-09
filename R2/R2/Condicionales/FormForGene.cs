@@ -19,12 +19,12 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double a = 0, b = 0, c = 0, b1 = 0, a1 = 0, b2 = 0;
-            double x1 = 0, x2 = 0;
+            double a, b, c, b1, a1, b2;
+            double x1, x2;
 
-            txtValA.Text = a.ToString();
-            txtValB.Text = b.ToString();
-            txtValC.Text = c.ToString();
+            a = double.Parse(txtValA.Text);
+            b = double.Parse(txtValB.Text);
+            c = double.Parse(txtValC.Text);
 
             b1 = (Math.Pow(b, 2) - (4 * a * c));
             b2 = -1 * b;
@@ -39,8 +39,8 @@ namespace R2
             }
             else
             {
-                txtRes1.Text = x1.ToString();
-                txtRes2.Text = x2.ToString();
+                x1 = double.Parse(txtRes1.Text);
+                x2 = double.Parse(txtRes2.Text);
             }
         }
 
@@ -57,6 +57,15 @@ namespace R2
         private void FormForGene_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtRes1.Text = "";
+            txtRes2.Text = "";
+            txtValA.Text = "";
+            txtValB.Text = "";
+            txtValC.Text = "";
         }
     }
 }

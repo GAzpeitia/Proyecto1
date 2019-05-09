@@ -20,11 +20,9 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            int llan = 0, monto = 0;
-            //String ruta = "e:\\globs.txt";
-            //StreamWriter file = new StreamWriter(ruta);
+            int llan, monto;
 
-                txtPrecio.Text = llan.ToString();
+            llan = int.Parse(txtPrecio.Text);
 
                 if (llan <= 50 && llan > 0)
                 {
@@ -50,6 +48,13 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCant.Text = "";
+            txtMen.Text = "";
+            txtPrecio.Text = "";
         }
     }
 }

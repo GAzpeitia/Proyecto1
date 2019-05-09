@@ -19,8 +19,8 @@ namespace R2
 
         private void btnCal_Click(object sender, EventArgs e)
         {
-            double num = 0;
-            txt1.Text = num.ToString();
+            double num;
+            num = double.Parse(txt1.Text);
                 num = Math.Abs(num);
             richRes.Text = "\nEl valor absoluto es: " + num;
         }
@@ -28,6 +28,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txt1.Text = "";
+            richRes.Text = "";
         }
     }
 }
