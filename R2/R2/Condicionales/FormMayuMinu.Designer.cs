@@ -36,6 +36,7 @@
             this.txtEscr = new System.Windows.Forms.TextBox();
             this.txtMay = new System.Windows.Forms.TextBox();
             this.txtMin = new System.Windows.Forms.TextBox();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCom
@@ -50,7 +51,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(138, 200);
+            this.btnSalir.Location = new System.Drawing.Point(107, 200);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -94,6 +95,7 @@
             // 
             // txtMay
             // 
+            this.txtMay.Enabled = false;
             this.txtMay.Location = new System.Drawing.Point(124, 99);
             this.txtMay.Name = "txtMay";
             this.txtMay.Size = new System.Drawing.Size(148, 20);
@@ -101,17 +103,30 @@
             // 
             // txtMin
             // 
+            this.txtMin.Enabled = false;
             this.txtMin.Location = new System.Drawing.Point(124, 140);
             this.txtMin.Name = "txtMin";
             this.txtMin.Size = new System.Drawing.Size(148, 20);
             this.txtMin.TabIndex = 7;
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(188, 200);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 53;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormMayuMinu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.txtMin);
             this.Controls.Add(this.txtMay);
             this.Controls.Add(this.txtEscr);
@@ -138,5 +153,6 @@
         private System.Windows.Forms.TextBox txtEscr;
         private System.Windows.Forms.TextBox txtMay;
         private System.Windows.Forms.TextBox txtMin;
+        private System.Windows.Forms.Button btnLim;
     }
 }

@@ -33,6 +33,7 @@
             this.txtMes = new System.Windows.Forms.TextBox();
             this.btnIr = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richDad
@@ -79,12 +80,24 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(305, 115);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 52;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormMeses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(392, 222);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIr);
             this.Controls.Add(this.txtMes);
@@ -105,5 +118,6 @@
         private System.Windows.Forms.TextBox txtMes;
         private System.Windows.Forms.Button btnIr;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnLim;
     }
 }

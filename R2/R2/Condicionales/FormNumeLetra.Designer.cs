@@ -33,6 +33,7 @@
             this.txtNum = new System.Windows.Forms.TextBox();
             this.txtLetra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -78,12 +79,24 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Ingrese un numero entre 0-100000:";
             // 
+            // btnLim
+            // 
+            this.btnLim.Location = new System.Drawing.Point(197, 161);
+            this.btnLim.Name = "btnLim";
+            this.btnLim.Size = new System.Drawing.Size(75, 23);
+            this.btnLim.TabIndex = 53;
+            this.btnLim.Text = "Limpiar";
+            this.btnLim.UseVisualStyleBackColor = true;
+            this.btnLim.Click += new System.EventHandler(this.btnLim_Click);
+            // 
             // FormNumeLetra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(284, 204);
             this.ControlBox = false;
+            this.Controls.Add(this.btnLim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLetra);
             this.Controls.Add(this.txtNum);
@@ -104,5 +117,6 @@
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.TextBox txtLetra;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLim;
     }
 }

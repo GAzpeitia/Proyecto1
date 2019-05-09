@@ -24,8 +24,8 @@ namespace R2
 
         private void btnIr_Click(object sender, EventArgs e)
         {
-            int option = 0;
-            txtMes.Text = option.ToString();
+            int option;
+            option = int.Parse(txtMes.Text);
 
             switch (option)
             {
@@ -74,6 +74,12 @@ namespace R2
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtMes.Text = "";
+            richDad.Text = "";
         }
     }
 }

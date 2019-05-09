@@ -59,5 +59,12 @@ namespace R2
         {
 
         }
+
+        private void btnLim_Click(object sender, EventArgs e)
+        {
+            txtLetra.Text = "";
+            txtNum.Text = "";
+            
+        }
     }
 }
